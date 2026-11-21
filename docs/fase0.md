@@ -1,7 +1,8 @@
 # Fase 0: patrones observados
 
 Primer cálculo de los patrones P1–P5 (ver [README](../README.md#41-patrones-los-observables))
-en tres ciudades medias, con el DENUE de 2015 y de mayo 2026. El objetivo de esta fase es
+en tres ciudades medias, con el DENUE de 2015 y de mayo 2026, y después con las 19
+versiones de 2015 a 2026. El objetivo de esta fase es
 saber si los patrones son lo bastante claros y estables para servir de oráculo.
 
 **Respuesta corta: sí.** Los patrones son fuertes, casi no cambian en 11 años y se
@@ -160,20 +161,68 @@ Dos resultados que orientan las reglas del simulador:
 
 2. **La tasa de baja casi no depende de la competencia cercana.** Por ejemplo, la
    fracción de abarrotes que desaparece es la misma (≈ 0.46 en Aguascalientes, ≈ 0.55 en
-   Mérida y Hermosillo) con 0, 1–2 o 3+ abarrotes a ≤ 200 m. En ropa y calzado es incluso
-   algo menor con más vecinos del mismo giro. Con estos datos, **el patrón se sostiene por
-   dónde se instalan los comercios, no por cuáles mueren**: una regla de localización con
-   una tasa de baja casi constante podría bastar.
+   Mérida y Hermosillo) con 0, 1–2 o 3+ abarrotes a ≤ 200 m. En ropa y calzado es
+   algo menor con más vecinos del mismo giro (ver la serie completa, abajo). Con estos
+   datos, **el patrón se sostiene sobre todo por dónde se instalan los comercios, no por
+   cuáles mueren**.
 
-Cuidado: entre 2015 y 2026 hay dos Censos Económicos, así que parte de las altas y bajas
-es actualización del directorio y no apertura o cierre real. Con la serie completa se
-podrá separar por periodos censales.
+## Serie completa (19 versiones, 2015–2026)
+
+Se repitió todo con las 19 versiones del DENUE. Las cifras por versión están en
+[fase0_comparacion.json](fase0_comparacion.json) (`cifras`).
+
+![Rotación y acceso a la población por versión](img/fase0_serie.png)
+
+*Líneas verticales: versiones que incorporan un Censo Económico (2019_11 y 2024_11).
+Figura: [scripts/figura_serie.py](../scripts/figura_serie.py).*
+
+**El DENUE no se actualiza de forma continua.** Entre censos desaparece a lo más el 3 % de
+los comercios por versión. En la versión que incorpora un censo desaparece de golpe entre
+el 32 % y el 43 %. No es un cambio de `id`: solo el 1 % de esas bajas tiene una alta con el
+mismo nombre a menos de 30 m. Son cierres y aperturas reales acumulados durante unos cinco
+años y registrados de una vez. Para la dinámica hay entonces **dos pasos de tiempo
+confiables**, 2014→2019 y 2019→2024, no 18.
+
+**Los patrones cambian en escalones, no de forma gradual.** La correlación de Jensen con
+2015 baja de 0.97–0.99 a 0.91–0.94 en 2019_11, se queda plana, y baja otra vez a
+0.87–0.92 en 2024_11. La dispersión de los bienes de comparación que se veía en P4 ocurre
+en esos mismos dos escalones (ropa en Hermosillo: 2.07 → 1.75 → 1.43; en Mérida: 1.97 →
+1.68 → 1.32). Una excepción: el calzado en Mérida se concentra en 2019 (1.79 → 2.19) y se
+dispersa en 2024 (2.04 → 1.61). Los bienes de cercanía no se mueven (0.70–0.80 en toda la
+serie). Entre ciudades, *r* = 0.68–0.86 en todas las versiones.
+
+**Dinámica por periodo censal** (en cada salto censal, versión previa → versión con censo):
+
+| | Sobreviven | Ropa: altas / existentes (mismo giro a ≤ 200 m, contra azar) | Ropa: baja con 0 / 1–2 / 3+ vecinos | Calzado: baja con 0 / 1–2 / 3+ |
+|---|---|---|---|---|
+| Aguascalientes 2019 | 60 % | 22 / 37 | 0.57 / 0.64 / 0.45 | 0.41 / 0.52 / 0.29 |
+| Aguascalientes 2024 | 68 % | 20 / 33 | 0.51 / 0.49 / 0.35 | 0.51 / 0.29 / 0.20 |
+| Mérida 2019 | 59 % | 107 / 137 | 0.64 / 0.55 / 0.46 | 0.60 / 0.41 / 0.36 |
+| Mérida 2024 | 63 % | 49 / 112 | 0.58 / 0.55 / 0.42 | 0.53 / 0.40 / 0.41 |
+| Hermosillo 2019 | 57 % | 68 / 112 | 0.58 / 0.45 / 0.49 | 0.56 / 0.40 / 0.40 |
+| Hermosillo 2024 | 67 % | 47 / 98 | 0.52 / 0.53 / 0.44 | 0.53 / 0.36 / 0.19 |
+
+Lo que confirma y lo que corrige respecto a la comparación 2015 → 2026:
+
+- **Confirma:** las altas de bienes de comparación se agrupan con su giro, pero menos que
+  los existentes, en los seis periodos. Así se explica la dispersión en escalones. En
+  abarrotes y papelerías las altas y los existentes se agrupan igual (≈ 2).
+- **Confirma:** en bienes de cercanía la tasa de baja no depende de los vecinos del mismo
+  giro (abarrotes: 0.33–0.42 en todas las clases y periodos, salvo Aguascalientes 2024).
+- **Matiza:** en ropa y calzado, tener 3 o más vecinos del mismo giro baja la tasa de baja
+  frente a no tener ninguno (ropa: 0.08–0.18 menos; calzado: 0.12–0.34 menos). La aglomeración ayuda a sobrevivir a los bienes de comparación, aunque
+  el efecto es menor que el de la localización de las altas.
+- Los bancos casi no tienen altas ni bajas en los saltos censales (sobreviven 80–99 %): el
+  Censo Económico no los actualiza igual que al comercio. Conviene sacarlos de la dinámica.
+- Alrededor del 15–20 % de las bajas censales tiene una alta del mismo giro (4 dígitos SCIAN)
+  a menos de 30 m: un local que se reocupa con el mismo giro. Entre 2022_11 y 2023_11, sin
+  censo de por medio, es el 2–10 %. Falta compararlo con un nulo.
 
 ## Qué sigue
 
-1. Repetir con toda la serie del DENUE (2015–2026), separando la dinámica por periodos
-   censales.
-2. Fase 1: simulador sobre la red y prueba de recuperación con lugares centrales.
+1. Fase 1: simulador sobre la red y prueba de recuperación con lugares centrales.
+2. Usar como oráculo dinámico los dos pasos censales (2014→2019 y 2019→2024), no las
+   versiones intermedias.
 
 Para el simulador, esta fase deja cuatro objetivos claros:
 
@@ -184,4 +233,5 @@ Para el simulador, esta fase deja cuatro objetivos claros:
 - **(c) Acceso a la población:** los giros de cercanía y los de comparación se separan
   igual en las tres ciudades.
 - **(d) Dinámica:** la evidencia apunta a una regla de localización con atracción por el
-  propio giro y una tasa de baja casi constante.
+  propio giro (más débil en las altas que en el stock), una tasa de baja casi constante en
+  bienes de cercanía y algo menor en aglomeraciones de bienes de comparación.

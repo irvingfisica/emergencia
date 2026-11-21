@@ -1,10 +1,1252 @@
 {
  "entre_versiones": {
+  "aguascalientes/2015 vs aguascalientes/2016_01": {
+   "pares": 625,
+   "r_todos": 0.9863132663364138,
+   "pares_significativos_en_ambas": 435,
+   "mismo_signo": 0.9977011494252873
+  },
+  "aguascalientes/2015 vs aguascalientes/2016_10": {
+   "pares": 625,
+   "r_todos": 0.9849053558174268,
+   "pares_significativos_en_ambas": 435,
+   "mismo_signo": 0.9977011494252873
+  },
+  "aguascalientes/2015 vs aguascalientes/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9817770062569773,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 0.9976415094339622
+  },
+  "aguascalientes/2015 vs aguascalientes/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9827430920779529,
+   "pares_significativos_en_ambas": 428,
+   "mismo_signo": 0.9976635514018691
+  },
+  "aguascalientes/2015 vs aguascalientes/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9801608368417052,
+   "pares_significativos_en_ambas": 422,
+   "mismo_signo": 0.9976303317535545
+  },
+  "aguascalientes/2015 vs aguascalientes/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9770351586197977,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2015 vs aguascalientes/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9729131793234801,
+   "pares_significativos_en_ambas": 423,
+   "mismo_signo": 0.9952718676122931
+  },
+  "aguascalientes/2015 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9391190588907867,
+   "pares_significativos_en_ambas": 384,
+   "mismo_signo": 0.9869791666666666
+  },
+  "aguascalientes/2015 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9437424572451588,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9847715736040609
+  },
+  "aguascalientes/2015 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9448244758843345,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.98989898989899
+  },
+  "aguascalientes/2015 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9458998189958581,
+   "pares_significativos_en_ambas": 383,
+   "mismo_signo": 0.9921671018276762
+  },
+  "aguascalientes/2015 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.946030733739508,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.9872773536895675
+  },
+  "aguascalientes/2015 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9460045479646775,
+   "pares_significativos_en_ambas": 387,
+   "mismo_signo": 0.9896640826873385
+  },
+  "aguascalientes/2015 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9458898547745441,
+   "pares_significativos_en_ambas": 391,
+   "mismo_signo": 0.9872122762148338
+  },
+  "aguascalientes/2015 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9494557489761039,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9848866498740554
+  },
+  "aguascalientes/2015 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9506061851710188,
+   "pares_significativos_en_ambas": 391,
+   "mismo_signo": 0.989769820971867
+  },
+  "aguascalientes/2015 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.92240452652021,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9720812182741116
+  },
+  "aguascalientes/2015 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9035758841032403,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.9747474747474747
+  },
   "aguascalientes/2015 vs aguascalientes/2026_05": {
    "pares": 625,
    "r_todos": 0.8772983362883293,
    "pares_significativos_en_ambas": 401,
    "mismo_signo": 0.972568578553616
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2016_10": {
+   "pares": 625,
+   "r_todos": 0.9972834437986244,
+   "pares_significativos_en_ambas": 443,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9924242935527925,
+   "pares_significativos_en_ambas": 428,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9929266536018145,
+   "pares_significativos_en_ambas": 437,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9893398558830283,
+   "pares_significativos_en_ambas": 430,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9880928646587407,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9826824936866223,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 0.9976470588235294
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.94772474489738,
+   "pares_significativos_en_ambas": 387,
+   "mismo_signo": 0.9922480620155039
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.952066845347386,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9898477157360406
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9528653746959752,
+   "pares_significativos_en_ambas": 395,
+   "mismo_signo": 0.9949367088607595
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9537142011960775,
+   "pares_significativos_en_ambas": 382,
+   "mismo_signo": 0.9947643979057592
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9540403473766712,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 0.9922680412371134
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9540090099973254,
+   "pares_significativos_en_ambas": 387,
+   "mismo_signo": 0.9896640826873385
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9537919364667513,
+   "pares_significativos_en_ambas": 391,
+   "mismo_signo": 0.9923273657289002
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9546103697175242,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9923469387755102
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9601303619940412,
+   "pares_significativos_en_ambas": 391,
+   "mismo_signo": 0.9948849104859335
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.931492661028286,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9748110831234257
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9196294995089304,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9848866498740554
+  },
+  "aguascalientes/2016_01 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8933580472074117,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9825436408977556
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9939063021922515,
+   "pares_significativos_en_ambas": 432,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9949934526512161,
+   "pares_significativos_en_ambas": 440,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9916458880284617,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9904127749398608,
+   "pares_significativos_en_ambas": 438,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9869698785968699,
+   "pares_significativos_en_ambas": 434,
+   "mismo_signo": 0.9953917050691244
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9519172854663752,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.9923076923076923
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9556883939627884,
+   "pares_significativos_en_ambas": 398,
+   "mismo_signo": 0.9899497487437185
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.955489907586215,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.9949109414758269
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9556810949200751,
+   "pares_significativos_en_ambas": 381,
+   "mismo_signo": 0.994750656167979
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9559756408525021,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9897959183673469
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9559246417955657,
+   "pares_significativos_en_ambas": 385,
+   "mismo_signo": 0.9922077922077922
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9557856867237321,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 0.9897172236503856
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9570772204970293,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.989821882951654
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9615278841051342,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9923469387755102
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9324488574993152,
+   "pares_significativos_en_ambas": 391,
+   "mismo_signo": 0.9769820971867008
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9199954045304299,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.9872773536895675
+  },
+  "aguascalientes/2016_10 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8936502134494755,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9849624060150376
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9984037698790046,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9948700361078453,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9915497920039772,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9903953051882204,
+   "pares_significativos_en_ambas": 423,
+   "mismo_signo": 0.9952718676122931
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9531461043363016,
+   "pares_significativos_en_ambas": 381,
+   "mismo_signo": 0.989501312335958
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9560809407016082,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9872448979591837
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9558120690619389,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9923469387755102
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9559514764903078,
+   "pares_significativos_en_ambas": 379,
+   "mismo_signo": 0.9920844327176781
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9558674946920259,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 0.9871134020618557
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9558317839281139,
+   "pares_significativos_en_ambas": 385,
+   "mismo_signo": 0.9896103896103896
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.955653346688596,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 0.987146529562982
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9577362506906475,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9897959183673469
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9608754009888968,
+   "pares_significativos_en_ambas": 391,
+   "mismo_signo": 0.9923273657289002
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9301584154576588,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9693877551020408
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9232259375849575,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.9797979797979798
+  },
+  "aguascalientes/2017_03 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8946072180157818,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.9797979797979798
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9962497187329296,
+   "pares_significativos_en_ambas": 435,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9931567848244441,
+   "pares_significativos_en_ambas": 436,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9922868460173848,
+   "pares_significativos_en_ambas": 434,
+   "mismo_signo": 0.9976958525345622
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9550491751493199,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9923857868020305
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9581201679426712,
+   "pares_significativos_en_ambas": 398,
+   "mismo_signo": 0.9899497487437185
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9580710339535954,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9950248756218906
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9579235019655514,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.9948717948717949
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9580143680250758,
+   "pares_significativos_en_ambas": 400,
+   "mismo_signo": 0.99
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9579820473311356,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.989821882951654
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9578292128478993,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9899749373433584
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.959031051984461,
+   "pares_significativos_en_ambas": 398,
+   "mismo_signo": 0.9899497487437185
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9626189975708969,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9924433249370277
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9328410327602649,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.9722222222222222
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9251298640271354,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9848866498740554
+  },
+  "aguascalientes/2017_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8960460171358342,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.982367758186398
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2018_11": {
+   "pares": 625,
+   "r_todos": 0.996499002791174,
+   "pares_significativos_en_ambas": 432,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9960659208928067,
+   "pares_significativos_en_ambas": 435,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9577666693533474,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.9847328244274809
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9595505334951157,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9874686716791979
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9596737464056776,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9899749373433584
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9592415532653354,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 0.9871134020618557
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9591967881655338,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9846938775510204
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9591409847170006,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.982051282051282
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9589615288017036,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9872448979591837
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9595980736319888,
+   "pares_significativos_en_ambas": 395,
+   "mismo_signo": 0.9898734177215189
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9633838668794942,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.9923664122137404
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9321202845131173,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.9696969696969697
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9242061344860312,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9798488664987406
+  },
+  "aguascalientes/2018_03 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8895649296946421,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9724310776942355
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9942047583985009,
+   "pares_significativos_en_ambas": 435,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9543642876954036,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 0.9922680412371134
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9564411772515987,
+   "pares_significativos_en_ambas": 398,
+   "mismo_signo": 0.992462311557789
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9562257085369795,
+   "pares_significativos_en_ambas": 398,
+   "mismo_signo": 0.9949748743718593
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9574079612732728,
+   "pares_significativos_en_ambas": 383,
+   "mismo_signo": 0.9947780678851175
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9573686812143285,
+   "pares_significativos_en_ambas": 395,
+   "mismo_signo": 0.9898734177215189
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9573036181779384,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 0.9922879177377892
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9570038231025368,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.989821882951654
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9576050355037318,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9899244332493703
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9636219315586821,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9924433249370277
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9297155800530941,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9771573604060914
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9239130135772703,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9873096446700508
+  },
+  "aguascalientes/2018_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8931244098920326,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9847715736040609
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9628218079494816,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9923469387755102
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9642429827848268,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.98989898989899
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9632430372851959,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9949874686716792
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9626312852771095,
+   "pares_significativos_en_ambas": 383,
+   "mismo_signo": 0.9947780678851175
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9627154528426206,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.9923664122137404
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.962662460635259,
+   "pares_significativos_en_ambas": 385,
+   "mismo_signo": 0.9922077922077922
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9625232926895936,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.9923076923076923
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9632673312344054,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.989821882951654
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9641583854862096,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 0.9923469387755102
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9335498871209618,
+   "pares_significativos_en_ambas": 391,
+   "mismo_signo": 0.9820971867007673
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.928009946521781,
+   "pares_significativos_en_ambas": 395,
+   "mismo_signo": 0.9898734177215189
+  },
+  "aguascalientes/2019_04 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8915348022122466,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9796954314720813
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9973767355194381,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9958656066053035,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9932270991733266,
+   "pares_significativos_en_ambas": 410,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9929359736260578,
+   "pares_significativos_en_ambas": 419,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9929165349921516,
+   "pares_significativos_en_ambas": 416,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9929573141419017,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.9976076555023924
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9910128106008635,
+   "pares_significativos_en_ambas": 414,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9859983389171186,
+   "pares_significativos_en_ambas": 413,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9567864167059162,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9949874686716792
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9475152835036418,
+   "pares_significativos_en_ambas": 403,
+   "mismo_signo": 0.9925558312655087
+  },
+  "aguascalientes/2019_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9141878194272627,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9949622166246851
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2020_11": {
+   "pares": 625,
+   "r_todos": 0.998184327299465,
+   "pares_significativos_en_ambas": 435,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9956239655531961,
+   "pares_significativos_en_ambas": 417,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9954996199858038,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9954839015096985,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.995539082274834,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9939977740698959,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9885420045521994,
+   "pares_significativos_en_ambas": 414,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9611966927162156,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9975062344139651
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9490709960054667,
+   "pares_significativos_en_ambas": 409,
+   "mismo_signo": 0.9926650366748166
+  },
+  "aguascalientes/2020_04 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.918039206753806,
+   "pares_significativos_en_ambas": 405,
+   "mismo_signo": 0.9925925925925926
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9979128954105067,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9976502650859246,
+   "pares_significativos_en_ambas": 432,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9976420936942325,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9975534816687484,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9950426207286605,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9907382859780967,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9624676819949407,
+   "pares_significativos_en_ambas": 411,
+   "mismo_signo": 0.9951338199513382
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9499353016965726,
+   "pares_significativos_en_ambas": 417,
+   "mismo_signo": 0.9904076738609112
+  },
+  "aguascalientes/2020_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9163080712232249,
+   "pares_significativos_en_ambas": 413,
+   "mismo_signo": 0.9878934624697336
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9997396166091476,
+   "pares_significativos_en_ambas": 427,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9997325401069032,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9996048371283147,
+   "pares_significativos_en_ambas": 427,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9970100169048576,
+   "pares_significativos_en_ambas": 416,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9928680738256394,
+   "pares_significativos_en_ambas": 411,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.963375672751916,
+   "pares_significativos_en_ambas": 398,
+   "mismo_signo": 0.9949748743718593
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.949974084084198,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9900497512437811
+  },
+  "aguascalientes/2021_05 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.915349695754301,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.98989898989899
+  },
+  "aguascalientes/2021_11 vs aguascalientes/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9999967318326347,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_11 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9998914604355503,
+   "pares_significativos_en_ambas": 431,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_11 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9973619058611628,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_11 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9928779598532678,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2021_11 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9636763262428883,
+   "pares_significativos_en_ambas": 405,
+   "mismo_signo": 0.9950617283950617
+  },
+  "aguascalientes/2021_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9499366531506749,
+   "pares_significativos_en_ambas": 407,
+   "mismo_signo": 0.9901719901719902
+  },
+  "aguascalientes/2021_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9155385243212423,
+   "pares_significativos_en_ambas": 404,
+   "mismo_signo": 0.9876237623762376
+  },
+  "aguascalientes/2022_05 vs aguascalientes/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9998917279042742,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2022_05 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9973471784318003,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2022_05 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9928610875240569,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2022_05 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9637325354693216,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9975124378109452
+  },
+  "aguascalientes/2022_05 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9499996522869029,
+   "pares_significativos_en_ambas": 405,
+   "mismo_signo": 0.9925925925925926
+  },
+  "aguascalientes/2022_05 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9156016635042173,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9925187032418953
+  },
+  "aguascalientes/2022_11 vs aguascalientes/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9974900203513314,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2022_11 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9928952563400915,
+   "pares_significativos_en_ambas": 419,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2022_11 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9640661224529623,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9975124378109452
+  },
+  "aguascalientes/2022_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9501584888076163,
+   "pares_significativos_en_ambas": 407,
+   "mismo_signo": 0.9926289926289926
+  },
+  "aguascalientes/2022_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9158446339830311,
+   "pares_significativos_en_ambas": 398,
+   "mismo_signo": 0.992462311557789
+  },
+  "aguascalientes/2023_11 vs aguascalientes/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9932628366248186,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 1.0
+  },
+  "aguascalientes/2023_11 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9617340014522245,
+   "pares_significativos_en_ambas": 404,
+   "mismo_signo": 0.9975247524752475
+  },
+  "aguascalientes/2023_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.947011616743045,
+   "pares_significativos_en_ambas": 405,
+   "mismo_signo": 0.9925925925925926
+  },
+  "aguascalientes/2023_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9141717021632597,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9925373134328358
+  },
+  "aguascalientes/2024_05 vs aguascalientes/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9635465614351828,
+   "pares_significativos_en_ambas": 404,
+   "mismo_signo": 0.995049504950495
+  },
+  "aguascalientes/2024_05 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9487578792535082,
+   "pares_significativos_en_ambas": 404,
+   "mismo_signo": 0.9925742574257426
+  },
+  "aguascalientes/2024_05 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9194273523953728,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9925187032418953
+  },
+  "aguascalientes/2024_11 vs aguascalientes/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9834731569847042,
+   "pares_significativos_en_ambas": 438,
+   "mismo_signo": 0.997716894977169
+  },
+  "aguascalientes/2024_11 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9476140641145595,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 0.9953810623556582
+  },
+  "aguascalientes/2025_05 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9622381065538947,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2016_01": {
+   "pares": 625,
+   "r_todos": 0.9909328779116758,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2016_10": {
+   "pares": 625,
+   "r_todos": 0.9889492784762988,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9836791395756265,
+   "pares_significativos_en_ambas": 380,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9817476299832617,
+   "pares_significativos_en_ambas": 378,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2018_03": {
+   "pares": 625,
+   "r_todos": 0.980286841378548,
+   "pares_significativos_en_ambas": 379,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9782744956493357,
+   "pares_significativos_en_ambas": 381,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9726080180959678,
+   "pares_significativos_en_ambas": 385,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2015 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9127955366630978,
+   "pares_significativos_en_ambas": 347,
+   "mismo_signo": 0.9913544668587896
+  },
+  "hermosillo/2015 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9192201700834965,
+   "pares_significativos_en_ambas": 349,
+   "mismo_signo": 0.9914040114613181
+  },
+  "hermosillo/2015 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9227717372200348,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.997093023255814
+  },
+  "hermosillo/2015 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9221266401927641,
+   "pares_significativos_en_ambas": 348,
+   "mismo_signo": 0.9913793103448276
+  },
+  "hermosillo/2015 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9213548809492045,
+   "pares_significativos_en_ambas": 349,
+   "mismo_signo": 0.9914040114613181
+  },
+  "hermosillo/2015 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.921337999660381,
+   "pares_significativos_en_ambas": 351,
+   "mismo_signo": 0.9886039886039886
+  },
+  "hermosillo/2015 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9046256670362703,
+   "pares_significativos_en_ambas": 342,
+   "mismo_signo": 0.9912280701754386
+  },
+  "hermosillo/2015 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.8991474797667989,
+   "pares_significativos_en_ambas": 345,
+   "mismo_signo": 0.9855072463768116
+  },
+  "hermosillo/2015 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8974941994666809,
+   "pares_significativos_en_ambas": 343,
+   "mismo_signo": 0.9854227405247813
+  },
+  "hermosillo/2015 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.870400602071244,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9852507374631269
+  },
+  "hermosillo/2015 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8584739853249688,
+   "pares_significativos_en_ambas": 331,
+   "mismo_signo": 0.9879154078549849
   },
   "hermosillo/2015 vs hermosillo/2026_05": {
    "pares": 625,
@@ -12,11 +1254,2171 @@
    "pares_significativos_en_ambas": 338,
    "mismo_signo": 0.9792899408284024
   },
+  "hermosillo/2016_01 vs hermosillo/2016_10": {
+   "pares": 625,
+   "r_todos": 0.9964553315730894,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_01 vs hermosillo/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9902264844783479,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_01 vs hermosillo/2017_11": {
+   "pares": 625,
+   "r_todos": 0.987873668141936,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_01 vs hermosillo/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9845497881095068,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_01 vs hermosillo/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9822451019316183,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_01 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9781893427131263,
+   "pares_significativos_en_ambas": 387,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_01 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9145329500578256,
+   "pares_significativos_en_ambas": 347,
+   "mismo_signo": 0.9913544668587896
+  },
+  "hermosillo/2016_01 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9172089431667177,
+   "pares_significativos_en_ambas": 346,
+   "mismo_signo": 0.9884393063583815
+  },
+  "hermosillo/2016_01 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9195724133408965,
+   "pares_significativos_en_ambas": 345,
+   "mismo_signo": 0.991304347826087
+  },
+  "hermosillo/2016_01 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9190749226832451,
+   "pares_significativos_en_ambas": 348,
+   "mismo_signo": 0.985632183908046
+  },
+  "hermosillo/2016_01 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9186969514018439,
+   "pares_significativos_en_ambas": 347,
+   "mismo_signo": 0.9855907780979827
+  },
+  "hermosillo/2016_01 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.918737150503007,
+   "pares_significativos_en_ambas": 350,
+   "mismo_signo": 0.9828571428571429
+  },
+  "hermosillo/2016_01 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8948697335986732,
+   "pares_significativos_en_ambas": 349,
+   "mismo_signo": 0.9885386819484241
+  },
+  "hermosillo/2016_01 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.8910217069540061,
+   "pares_significativos_en_ambas": 345,
+   "mismo_signo": 0.9855072463768116
+  },
+  "hermosillo/2016_01 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8903457719714784,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.9796511627906976
+  },
+  "hermosillo/2016_01 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8622789210761654,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.9796511627906976
+  },
+  "hermosillo/2016_01 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8568803436282844,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9881656804733728
+  },
+  "hermosillo/2016_01 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.882842762042999,
+   "pares_significativos_en_ambas": 336,
+   "mismo_signo": 0.9880952380952381
+  },
+  "hermosillo/2016_10 vs hermosillo/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9938055138190613,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_10 vs hermosillo/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9916667223755654,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_10 vs hermosillo/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9887517352908993,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_10 vs hermosillo/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9864053838033724,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_10 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9825752868015318,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2016_10 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9163014376957466,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.9912790697674418
+  },
+  "hermosillo/2016_10 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9182345838303552,
+   "pares_significativos_en_ambas": 343,
+   "mismo_signo": 0.9883381924198251
+  },
+  "hermosillo/2016_10 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9207570018261003,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9911764705882353
+  },
+  "hermosillo/2016_10 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9203024841898817,
+   "pares_significativos_en_ambas": 343,
+   "mismo_signo": 0.9854227405247813
+  },
+  "hermosillo/2016_10 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9201148040408118,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9853372434017595
+  },
+  "hermosillo/2016_10 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9201379329372501,
+   "pares_significativos_en_ambas": 347,
+   "mismo_signo": 0.9827089337175793
+  },
+  "hermosillo/2016_10 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8962433752720547,
+   "pares_significativos_en_ambas": 343,
+   "mismo_signo": 0.9883381924198251
+  },
+  "hermosillo/2016_10 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.8902370871002259,
+   "pares_significativos_en_ambas": 337,
+   "mismo_signo": 0.9881305637982196
+  },
+  "hermosillo/2016_10 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8901169905460304,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9794721407624634
+  },
+  "hermosillo/2016_10 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8608259308354391,
+   "pares_significativos_en_ambas": 333,
+   "mismo_signo": 0.9819819819819819
+  },
+  "hermosillo/2016_10 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8557203965656883,
+   "pares_significativos_en_ambas": 331,
+   "mismo_signo": 0.9909365558912386
+  },
+  "hermosillo/2016_10 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8852687688586715,
+   "pares_significativos_en_ambas": 331,
+   "mismo_signo": 0.9879154078549849
+  },
+  "hermosillo/2017_03 vs hermosillo/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9978912621512827,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2017_03 vs hermosillo/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9932166942941583,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2017_03 vs hermosillo/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9906902179875019,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2017_03 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9846489796497084,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2017_03 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.916943556466197,
+   "pares_significativos_en_ambas": 343,
+   "mismo_signo": 0.9941690962099126
+  },
+  "hermosillo/2017_03 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9211641123245101,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.9912790697674418
+  },
+  "hermosillo/2017_03 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9215890444008116,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9912023460410557
+  },
+  "hermosillo/2017_03 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9210663550196243,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9882697947214076
+  },
+  "hermosillo/2017_03 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9209810913345992,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9882697947214076
+  },
+  "hermosillo/2017_03 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9210073910884686,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9882352941176471
+  },
+  "hermosillo/2017_03 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8973784842659319,
+   "pares_significativos_en_ambas": 342,
+   "mismo_signo": 0.9883040935672515
+  },
+  "hermosillo/2017_03 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.891423431167293,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9881656804733728
+  },
+  "hermosillo/2017_03 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8932007494758426,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9852507374631269
+  },
+  "hermosillo/2017_03 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8614169789139027,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9852941176470589
+  },
+  "hermosillo/2017_03 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8533948700475855,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9911504424778761
+  },
+  "hermosillo/2017_03 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8794855607507314,
+   "pares_significativos_en_ambas": 333,
+   "mismo_signo": 0.987987987987988
+  },
+  "hermosillo/2017_11 vs hermosillo/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9951874015422528,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2017_11 vs hermosillo/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9918465843026835,
+   "pares_significativos_en_ambas": 392,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2017_11 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9838993097591835,
+   "pares_significativos_en_ambas": 384,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2017_11 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9194213709693659,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9941176470588236
+  },
+  "hermosillo/2017_11 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.922833549851102,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9911504424778761
+  },
+  "hermosillo/2017_11 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9236453713838587,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9911504424778761
+  },
+  "hermosillo/2017_11 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9228967254044118,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9882005899705014
+  },
+  "hermosillo/2017_11 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9227840461896735,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9882352941176471
+  },
+  "hermosillo/2017_11 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9228072911779129,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9882697947214076
+  },
+  "hermosillo/2017_11 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8987540841213806,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9881656804733728
+  },
+  "hermosillo/2017_11 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.893072194055796,
+   "pares_significativos_en_ambas": 337,
+   "mismo_signo": 0.9851632047477745
+  },
+  "hermosillo/2017_11 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8954343827472174,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9794117647058823
+  },
+  "hermosillo/2017_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8621665410621672,
+   "pares_significativos_en_ambas": 334,
+   "mismo_signo": 0.9820359281437125
+  },
+  "hermosillo/2017_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8544688468720909,
+   "pares_significativos_en_ambas": 333,
+   "mismo_signo": 0.987987987987988
+  },
+  "hermosillo/2017_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8817870344456267,
+   "pares_significativos_en_ambas": 331,
+   "mismo_signo": 0.9879154078549849
+  },
+  "hermosillo/2018_03 vs hermosillo/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9972232299965963,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2018_03 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9909479155765024,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2018_03 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9263626603150834,
+   "pares_significativos_en_ambas": 342,
+   "mismo_signo": 0.9941520467836257
+  },
+  "hermosillo/2018_03 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9300598351406532,
+   "pares_significativos_en_ambas": 345,
+   "mismo_signo": 0.991304347826087
+  },
+  "hermosillo/2018_03 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9304580788095476,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9911764705882353
+  },
+  "hermosillo/2018_03 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.929236065707215,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9882697947214076
+  },
+  "hermosillo/2018_03 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9290574363376473,
+   "pares_significativos_en_ambas": 342,
+   "mismo_signo": 0.9883040935672515
+  },
+  "hermosillo/2018_03 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9290880685419888,
+   "pares_significativos_en_ambas": 343,
+   "mismo_signo": 0.9883381924198251
+  },
+  "hermosillo/2018_03 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9035869290420555,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9882697947214076
+  },
+  "hermosillo/2018_03 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.8961102993401623,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9881656804733728
+  },
+  "hermosillo/2018_03 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8979832230016181,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9852507374631269
+  },
+  "hermosillo/2018_03 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8618573954532599,
+   "pares_significativos_en_ambas": 332,
+   "mismo_signo": 0.9849397590361446
+  },
+  "hermosillo/2018_03 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8534751555144643,
+   "pares_significativos_en_ambas": 332,
+   "mismo_signo": 0.9879518072289156
+  },
+  "hermosillo/2018_03 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8757729808358596,
+   "pares_significativos_en_ambas": 330,
+   "mismo_signo": 0.9848484848484849
+  },
+  "hermosillo/2018_11 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9941209750064174,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2018_11 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9218664367389571,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9941348973607038
+  },
+  "hermosillo/2018_11 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9256741058118368,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9882697947214076
+  },
+  "hermosillo/2018_11 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9259734929608865,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9882697947214076
+  },
+  "hermosillo/2018_11 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9252660261140766,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9882005899705014
+  },
+  "hermosillo/2018_11 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9251210415289707,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9912023460410557
+  },
+  "hermosillo/2018_11 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9251507797497177,
+   "pares_significativos_en_ambas": 342,
+   "mismo_signo": 0.9883040935672515
+  },
+  "hermosillo/2018_11 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8997434944794488,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9852941176470589
+  },
+  "hermosillo/2018_11 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.8922255360310155,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9792899408284024
+  },
+  "hermosillo/2018_11 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8945417795686601,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9793510324483776
+  },
+  "hermosillo/2018_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8604128224960655,
+   "pares_significativos_en_ambas": 332,
+   "mismo_signo": 0.9789156626506024
+  },
+  "hermosillo/2018_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8523849179429986,
+   "pares_significativos_en_ambas": 332,
+   "mismo_signo": 0.9909638554216867
+  },
+  "hermosillo/2018_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8800677351888704,
+   "pares_significativos_en_ambas": 333,
+   "mismo_signo": 0.990990990990991
+  },
+  "hermosillo/2019_04 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9212994320116287,
+   "pares_significativos_en_ambas": 350,
+   "mismo_signo": 0.9942857142857143
+  },
+  "hermosillo/2019_04 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9246528530923807,
+   "pares_significativos_en_ambas": 347,
+   "mismo_signo": 0.9884726224783862
+  },
+  "hermosillo/2019_04 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9238168577645522,
+   "pares_significativos_en_ambas": 345,
+   "mismo_signo": 0.991304347826087
+  },
+  "hermosillo/2019_04 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9226424091886843,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.9912790697674418
+  },
+  "hermosillo/2019_04 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9221224190279068,
+   "pares_significativos_en_ambas": 346,
+   "mismo_signo": 0.9942196531791907
+  },
+  "hermosillo/2019_04 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9221387659753004,
+   "pares_significativos_en_ambas": 347,
+   "mismo_signo": 0.9913544668587896
+  },
+  "hermosillo/2019_04 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8969317231131504,
+   "pares_significativos_en_ambas": 347,
+   "mismo_signo": 0.9884726224783862
+  },
+  "hermosillo/2019_04 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.8886876987572827,
+   "pares_significativos_en_ambas": 345,
+   "mismo_signo": 0.9826086956521739
+  },
+  "hermosillo/2019_04 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8905621990314381,
+   "pares_significativos_en_ambas": 348,
+   "mismo_signo": 0.9712643678160919
+  },
+  "hermosillo/2019_04 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8608579061302539,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.9825581395348837
+  },
+  "hermosillo/2019_04 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8535657066179528,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9941002949852508
+  },
+  "hermosillo/2019_04 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8837825743193691,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9911242603550295
+  },
+  "hermosillo/2019_11 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9925993580110597,
+   "pares_significativos_en_ambas": 353,
+   "mismo_signo": 0.9971671388101983
+  },
+  "hermosillo/2019_11 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9897479612534367,
+   "pares_significativos_en_ambas": 354,
+   "mismo_signo": 0.9971751412429378
+  },
+  "hermosillo/2019_11 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9877541045630243,
+   "pares_significativos_en_ambas": 356,
+   "mismo_signo": 0.9971910112359551
+  },
+  "hermosillo/2019_11 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9875322363361436,
+   "pares_significativos_en_ambas": 350,
+   "mismo_signo": 0.9971428571428571
+  },
+  "hermosillo/2019_11 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9875131991181081,
+   "pares_significativos_en_ambas": 351,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2019_11 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.966785052661236,
+   "pares_significativos_en_ambas": 350,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2019_11 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9598824690234186,
+   "pares_significativos_en_ambas": 349,
+   "mismo_signo": 0.994269340974212
+  },
+  "hermosillo/2019_11 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9565949733334894,
+   "pares_significativos_en_ambas": 349,
+   "mismo_signo": 0.9885386819484241
+  },
+  "hermosillo/2019_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8799275430781508,
+   "pares_significativos_en_ambas": 335,
+   "mismo_signo": 0.9880597014925373
+  },
+  "hermosillo/2019_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8734452538547208,
+   "pares_significativos_en_ambas": 332,
+   "mismo_signo": 0.9969879518072289
+  },
+  "hermosillo/2019_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8649245810100504,
+   "pares_significativos_en_ambas": 321,
+   "mismo_signo": 0.9937694704049844
+  },
+  "hermosillo/2020_04 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9960806095309405,
+   "pares_significativos_en_ambas": 366,
+   "mismo_signo": 0.9972677595628415
+  },
+  "hermosillo/2020_04 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9931057736272965,
+   "pares_significativos_en_ambas": 364,
+   "mismo_signo": 0.9972527472527473
+  },
+  "hermosillo/2020_04 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9929895844085062,
+   "pares_significativos_en_ambas": 364,
+   "mismo_signo": 0.9972527472527473
+  },
+  "hermosillo/2020_04 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9929463438260229,
+   "pares_significativos_en_ambas": 361,
+   "mismo_signo": 0.997229916897507
+  },
+  "hermosillo/2020_04 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9711298556369934,
+   "pares_significativos_en_ambas": 365,
+   "mismo_signo": 0.9972602739726028
+  },
+  "hermosillo/2020_04 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9657193847492556,
+   "pares_significativos_en_ambas": 360,
+   "mismo_signo": 0.9972222222222222
+  },
+  "hermosillo/2020_04 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9645907616252204,
+   "pares_significativos_en_ambas": 358,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2020_04 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8887725599819195,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9940828402366864
+  },
+  "hermosillo/2020_04 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.875551540313169,
+   "pares_significativos_en_ambas": 331,
+   "mismo_signo": 0.9939577039274925
+  },
+  "hermosillo/2020_04 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.868607177402325,
+   "pares_significativos_en_ambas": 316,
+   "mismo_signo": 0.9873417721518988
+  },
+  "hermosillo/2020_11 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9973845410572922,
+   "pares_significativos_en_ambas": 368,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2020_11 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9972795272952913,
+   "pares_significativos_en_ambas": 369,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2020_11 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9972618985752901,
+   "pares_significativos_en_ambas": 361,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2020_11 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9760375643886208,
+   "pares_significativos_en_ambas": 362,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2020_11 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9709986736548324,
+   "pares_significativos_en_ambas": 357,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2020_11 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9686071442656059,
+   "pares_significativos_en_ambas": 358,
+   "mismo_signo": 0.9972067039106145
+  },
+  "hermosillo/2020_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8902316137816682,
+   "pares_significativos_en_ambas": 335,
+   "mismo_signo": 0.9970149253731343
+  },
+  "hermosillo/2020_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.878305388411304,
+   "pares_significativos_en_ambas": 330,
+   "mismo_signo": 0.9939393939393939
+  },
+  "hermosillo/2020_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8730641829821503,
+   "pares_significativos_en_ambas": 319,
+   "mismo_signo": 0.9905956112852664
+  },
+  "hermosillo/2021_05 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9997310422748743,
+   "pares_significativos_en_ambas": 368,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2021_05 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9997197160989991,
+   "pares_significativos_en_ambas": 367,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2021_05 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9777803997345579,
+   "pares_significativos_en_ambas": 369,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2021_05 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9723120481506804,
+   "pares_significativos_en_ambas": 359,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2021_05 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9698081751861393,
+   "pares_significativos_en_ambas": 363,
+   "mismo_signo": 0.9972451790633609
+  },
+  "hermosillo/2021_05 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8933990276181972,
+   "pares_significativos_en_ambas": 337,
+   "mismo_signo": 0.9970326409495549
+  },
+  "hermosillo/2021_05 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8818877383658499,
+   "pares_significativos_en_ambas": 331,
+   "mismo_signo": 0.9939577039274925
+  },
+  "hermosillo/2021_05 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.878171770147825,
+   "pares_significativos_en_ambas": 314,
+   "mismo_signo": 0.9936305732484076
+  },
+  "hermosillo/2021_11 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9999940494513321,
+   "pares_significativos_en_ambas": 369,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2021_11 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9779328828979168,
+   "pares_significativos_en_ambas": 364,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2021_11 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9723443833865636,
+   "pares_significativos_en_ambas": 361,
+   "mismo_signo": 0.9944598337950139
+  },
+  "hermosillo/2021_11 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9698238438426494,
+   "pares_significativos_en_ambas": 359,
+   "mismo_signo": 0.9916434540389972
+  },
+  "hermosillo/2021_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8936515144019596,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9912023460410557
+  },
+  "hermosillo/2021_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8822183032642235,
+   "pares_significativos_en_ambas": 332,
+   "mismo_signo": 0.9939759036144579
+  },
+  "hermosillo/2021_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8778131079184475,
+   "pares_significativos_en_ambas": 317,
+   "mismo_signo": 0.9936908517350158
+  },
+  "hermosillo/2022_05 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9779259771700853,
+   "pares_significativos_en_ambas": 367,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2022_05 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9723397819158118,
+   "pares_significativos_en_ambas": 358,
+   "mismo_signo": 0.994413407821229
+  },
+  "hermosillo/2022_05 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9698225149641866,
+   "pares_significativos_en_ambas": 357,
+   "mismo_signo": 0.9915966386554622
+  },
+  "hermosillo/2022_05 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.8934040685933434,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9911242603550295
+  },
+  "hermosillo/2022_05 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.881936075494883,
+   "pares_significativos_en_ambas": 332,
+   "mismo_signo": 0.9969879518072289
+  },
+  "hermosillo/2022_05 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8775298554499297,
+   "pares_significativos_en_ambas": 319,
+   "mismo_signo": 0.9937304075235109
+  },
+  "hermosillo/2022_11 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9940521129012073,
+   "pares_significativos_en_ambas": 362,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2022_11 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9909228825720579,
+   "pares_significativos_en_ambas": 360,
+   "mismo_signo": 0.9972222222222222
+  },
+  "hermosillo/2022_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9152612105313818,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9970674486803519
+  },
+  "hermosillo/2022_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9028192537365395,
+   "pares_significativos_en_ambas": 335,
+   "mismo_signo": 1.0
+  },
+  "hermosillo/2022_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8638438508999348,
+   "pares_significativos_en_ambas": 320,
+   "mismo_signo": 0.99375
+  },
+  "hermosillo/2023_11 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9967146399120346,
+   "pares_significativos_en_ambas": 365,
+   "mismo_signo": 0.9972602739726028
+  },
+  "hermosillo/2023_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9220265753981327,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.997093023255814
+  },
+  "hermosillo/2023_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.909072943908217,
+   "pares_significativos_en_ambas": 336,
+   "mismo_signo": 0.9910714285714286
+  },
+  "hermosillo/2023_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8663138546280655,
+   "pares_significativos_en_ambas": 323,
+   "mismo_signo": 0.978328173374613
+  },
+  "hermosillo/2024_05 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.921864999308619,
+   "pares_significativos_en_ambas": 344,
+   "mismo_signo": 0.9912790697674418
+  },
+  "hermosillo/2024_05 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9067459176020173,
+   "pares_significativos_en_ambas": 334,
+   "mismo_signo": 0.9850299401197605
+  },
+  "hermosillo/2024_05 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8665189004801919,
+   "pares_significativos_en_ambas": 321,
+   "mismo_signo": 0.9750778816199377
+  },
+  "hermosillo/2024_11 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9864122598180446,
+   "pares_significativos_en_ambas": 366,
+   "mismo_signo": 0.9918032786885246
+  },
+  "hermosillo/2024_11 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9349655895237099,
+   "pares_significativos_en_ambas": 350,
+   "mismo_signo": 0.9828571428571429
+  },
+  "hermosillo/2025_05 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9422065515773097,
+   "pares_significativos_en_ambas": 357,
+   "mismo_signo": 0.9943977591036415
+  },
+  "merida/2015 vs merida/2016_01": {
+   "pares": 625,
+   "r_todos": 0.9922802527623317,
+   "pares_significativos_en_ambas": 450,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2016_10": {
+   "pares": 625,
+   "r_todos": 0.9911317666553858,
+   "pares_significativos_en_ambas": 440,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9908930608829081,
+   "pares_significativos_en_ambas": 439,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9904481298408065,
+   "pares_significativos_en_ambas": 445,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9824406871941672,
+   "pares_significativos_en_ambas": 435,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9799252289114754,
+   "pares_significativos_en_ambas": 439,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9740790445547791,
+   "pares_significativos_en_ambas": 446,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9408292167282436,
+   "pares_significativos_en_ambas": 414,
+   "mismo_signo": 1.0
+  },
+  "merida/2015 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9419539071009115,
+   "pares_significativos_en_ambas": 422,
+   "mismo_signo": 0.9928909952606635
+  },
+  "merida/2015 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9442564154798775,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.9976076555023924
+  },
+  "merida/2015 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9431393564095187,
+   "pares_significativos_en_ambas": 423,
+   "mismo_signo": 0.9905437352245863
+  },
+  "merida/2015 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9435080160809532,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.992822966507177
+  },
+  "merida/2015 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9435682734420546,
+   "pares_significativos_en_ambas": 416,
+   "mismo_signo": 0.9927884615384616
+  },
+  "merida/2015 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9436251847301018,
+   "pares_significativos_en_ambas": 419,
+   "mismo_signo": 0.9904534606205251
+  },
+  "merida/2015 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9356546085194369,
+   "pares_significativos_en_ambas": 416,
+   "mismo_signo": 0.9879807692307693
+  },
+  "merida/2015 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9431489825845926,
+   "pares_significativos_en_ambas": 413,
+   "mismo_signo": 0.9927360774818402
+  },
+  "merida/2015 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9171174614713257,
+   "pares_significativos_en_ambas": 389,
+   "mismo_signo": 0.9820051413881749
+  },
+  "merida/2015 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9104232851686,
+   "pares_significativos_en_ambas": 406,
+   "mismo_signo": 0.9778325123152709
+  },
   "merida/2015 vs merida/2026_05": {
    "pares": 625,
    "r_todos": 0.8860032161631102,
    "pares_significativos_en_ambas": 396,
    "mismo_signo": 0.9823232323232324
+  },
+  "merida/2016_01 vs merida/2016_10": {
+   "pares": 625,
+   "r_todos": 0.9985032799797717,
+   "pares_significativos_en_ambas": 442,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_01 vs merida/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9964879841404011,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_01 vs merida/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9962425934614317,
+   "pares_significativos_en_ambas": 451,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_01 vs merida/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9873231044911436,
+   "pares_significativos_en_ambas": 442,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_01 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9832503136299783,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_01 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9782069672881356,
+   "pares_significativos_en_ambas": 453,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_01 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9459310374325978,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_01 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9484666533680554,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 0.9953051643192489
+  },
+  "merida/2016_01 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9515305406071577,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 0.9976415094339622
+  },
+  "merida/2016_01 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9509045599207934,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 0.9953051643192489
+  },
+  "merida/2016_01 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9510453679973799,
+   "pares_significativos_en_ambas": 423,
+   "mismo_signo": 0.9952718676122931
+  },
+  "merida/2016_01 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9510870794130917,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 0.995249406175772
+  },
+  "merida/2016_01 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9510559645882599,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 0.9929411764705882
+  },
+  "merida/2016_01 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9414406342558691,
+   "pares_significativos_en_ambas": 419,
+   "mismo_signo": 0.9952267303102625
+  },
+  "merida/2016_01 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9489398263824099,
+   "pares_significativos_en_ambas": 419,
+   "mismo_signo": 0.9952267303102625
+  },
+  "merida/2016_01 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9217843939451419,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.9948717948717949
+  },
+  "merida/2016_01 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9154442340763103,
+   "pares_significativos_en_ambas": 407,
+   "mismo_signo": 0.9901719901719902
+  },
+  "merida/2016_01 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8972580839271166,
+   "pares_significativos_en_ambas": 394,
+   "mismo_signo": 0.9949238578680203
+  },
+  "merida/2016_10 vs merida/2017_03": {
+   "pares": 625,
+   "r_todos": 0.9975870159652046,
+   "pares_significativos_en_ambas": 439,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_10 vs merida/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9973471250425037,
+   "pares_significativos_en_ambas": 446,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_10 vs merida/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9883297820845972,
+   "pares_significativos_en_ambas": 439,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_10 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9845601656843996,
+   "pares_significativos_en_ambas": 437,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_10 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9802197129488148,
+   "pares_significativos_en_ambas": 443,
+   "mismo_signo": 1.0
+  },
+  "merida/2016_10 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9474175989296647,
+   "pares_significativos_en_ambas": 413,
+   "mismo_signo": 0.9975786924939467
+  },
+  "merida/2016_10 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9501970592026413,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.992822966507177
+  },
+  "merida/2016_10 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9527289235947434,
+   "pares_significativos_en_ambas": 417,
+   "mismo_signo": 0.9952038369304557
+  },
+  "merida/2016_10 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9521304635176129,
+   "pares_significativos_en_ambas": 417,
+   "mismo_signo": 0.9928057553956835
+  },
+  "merida/2016_10 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9522808726876757,
+   "pares_significativos_en_ambas": 413,
+   "mismo_signo": 0.9927360774818402
+  },
+  "merida/2016_10 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9523187770743037,
+   "pares_significativos_en_ambas": 412,
+   "mismo_signo": 0.9927184466019418
+  },
+  "merida/2016_10 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9523007219080053,
+   "pares_significativos_en_ambas": 415,
+   "mismo_signo": 0.9903614457831326
+  },
+  "merida/2016_10 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9434458107474929,
+   "pares_significativos_en_ambas": 414,
+   "mismo_signo": 0.9903381642512077
+  },
+  "merida/2016_10 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.950608501754587,
+   "pares_significativos_en_ambas": 410,
+   "mismo_signo": 0.9951219512195122
+  },
+  "merida/2016_10 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9245977993429132,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 0.9871134020618557
+  },
+  "merida/2016_10 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9180866297547052,
+   "pares_significativos_en_ambas": 403,
+   "mismo_signo": 0.9826302729528535
+  },
+  "merida/2016_10 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.89920942910832,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.9871794871794872
+  },
+  "merida/2017_03 vs merida/2017_11": {
+   "pares": 625,
+   "r_todos": 0.9997408653115349,
+   "pares_significativos_en_ambas": 451,
+   "mismo_signo": 1.0
+  },
+  "merida/2017_03 vs merida/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9907847536485178,
+   "pares_significativos_en_ambas": 441,
+   "mismo_signo": 1.0
+  },
+  "merida/2017_03 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9867024803564717,
+   "pares_significativos_en_ambas": 441,
+   "mismo_signo": 1.0
+  },
+  "merida/2017_03 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9824846054390919,
+   "pares_significativos_en_ambas": 448,
+   "mismo_signo": 1.0
+  },
+  "merida/2017_03 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9479999754050189,
+   "pares_significativos_en_ambas": 410,
+   "mismo_signo": 0.9951219512195122
+  },
+  "merida/2017_03 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9502627718811897,
+   "pares_significativos_en_ambas": 415,
+   "mismo_signo": 0.9927710843373494
+  },
+  "merida/2017_03 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9528843170867318,
+   "pares_significativos_en_ambas": 414,
+   "mismo_signo": 0.9951690821256038
+  },
+  "merida/2017_03 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.95229972759784,
+   "pares_significativos_en_ambas": 415,
+   "mismo_signo": 0.9927710843373494
+  },
+  "merida/2017_03 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9523848510087,
+   "pares_significativos_en_ambas": 411,
+   "mismo_signo": 0.9927007299270073
+  },
+  "merida/2017_03 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9524248683724479,
+   "pares_significativos_en_ambas": 410,
+   "mismo_signo": 0.9926829268292683
+  },
+  "merida/2017_03 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9523820590013053,
+   "pares_significativos_en_ambas": 413,
+   "mismo_signo": 0.9903147699757869
+  },
+  "merida/2017_03 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9428213242084805,
+   "pares_significativos_en_ambas": 408,
+   "mismo_signo": 0.9926470588235294
+  },
+  "merida/2017_03 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9502271043429908,
+   "pares_significativos_en_ambas": 408,
+   "mismo_signo": 0.9950980392156863
+  },
+  "merida/2017_03 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9265239997605003,
+   "pares_significativos_en_ambas": 386,
+   "mismo_signo": 0.9922279792746114
+  },
+  "merida/2017_03 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9197851669519247,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9875621890547264
+  },
+  "merida/2017_03 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8993733956464048,
+   "pares_significativos_en_ambas": 388,
+   "mismo_signo": 0.9922680412371134
+  },
+  "merida/2017_11 vs merida/2018_03": {
+   "pares": 625,
+   "r_todos": 0.9910004714414852,
+   "pares_significativos_en_ambas": 449,
+   "mismo_signo": 1.0
+  },
+  "merida/2017_11 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9868379022869082,
+   "pares_significativos_en_ambas": 448,
+   "mismo_signo": 1.0
+  },
+  "merida/2017_11 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9828077910186184,
+   "pares_significativos_en_ambas": 454,
+   "mismo_signo": 1.0
+  },
+  "merida/2017_11 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9478315205584641,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.9976076555023924
+  },
+  "merida/2017_11 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9502275220511729,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 0.9929245283018868
+  },
+  "merida/2017_11 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9526142127501337,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 0.9952830188679245
+  },
+  "merida/2017_11 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9521133299296147,
+   "pares_significativos_en_ambas": 423,
+   "mismo_signo": 0.9929078014184397
+  },
+  "merida/2017_11 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9521881262490973,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 0.9928741092636579
+  },
+  "merida/2017_11 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9522281228556206,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.992822966507177
+  },
+  "merida/2017_11 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9521671049796355,
+   "pares_significativos_en_ambas": 422,
+   "mismo_signo": 0.990521327014218
+  },
+  "merida/2017_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9426269033433214,
+   "pares_significativos_en_ambas": 416,
+   "mismo_signo": 0.9927884615384616
+  },
+  "merida/2017_11 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9500853977035119,
+   "pares_significativos_en_ambas": 416,
+   "mismo_signo": 0.9951923076923077
+  },
+  "merida/2017_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.926034543552888,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.989821882951654
+  },
+  "merida/2017_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9195232279933997,
+   "pares_significativos_en_ambas": 409,
+   "mismo_signo": 0.9853300733496333
+  },
+  "merida/2017_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8993182994102914,
+   "pares_significativos_en_ambas": 393,
+   "mismo_signo": 0.989821882951654
+  },
+  "merida/2018_03 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.9958242876649362,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2018_03 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9925714324204377,
+   "pares_significativos_en_ambas": 451,
+   "mismo_signo": 1.0
+  },
+  "merida/2018_03 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9579580490909728,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 0.9976190476190476
+  },
+  "merida/2018_03 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.957140711926017,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 0.9928741092636579
+  },
+  "merida/2018_03 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9597505283508646,
+   "pares_significativos_en_ambas": 423,
+   "mismo_signo": 0.9952718676122931
+  },
+  "merida/2018_03 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9584403626673591,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 0.9928741092636579
+  },
+  "merida/2018_03 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9585835583862315,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 0.9928571428571429
+  },
+  "merida/2018_03 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9586153774079207,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.992822966507177
+  },
+  "merida/2018_03 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9584799001863307,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 0.9904761904761905
+  },
+  "merida/2018_03 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9485743844304015,
+   "pares_significativos_en_ambas": 410,
+   "mismo_signo": 0.9926829268292683
+  },
+  "merida/2018_03 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.954341122515389,
+   "pares_significativos_en_ambas": 414,
+   "mismo_signo": 0.9951690821256038
+  },
+  "merida/2018_03 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.928553014777979,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.9923076923076923
+  },
+  "merida/2018_03 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9236366092326331,
+   "pares_significativos_en_ambas": 406,
+   "mismo_signo": 0.9876847290640394
+  },
+  "merida/2018_03 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8726192584354028,
+   "pares_significativos_en_ambas": 390,
+   "mismo_signo": 0.9923076923076923
+  },
+  "merida/2018_11 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.9932404448870642,
+   "pares_significativos_en_ambas": 459,
+   "mismo_signo": 1.0
+  },
+  "merida/2018_11 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.958301904859025,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 0.9953051643192489
+  },
+  "merida/2018_11 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9567562388946254,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 0.993006993006993
+  },
+  "merida/2018_11 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9566345173931311,
+   "pares_significativos_en_ambas": 428,
+   "mismo_signo": 0.9953271028037384
+  },
+  "merida/2018_11 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9555828372247912,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 0.9929577464788732
+  },
+  "merida/2018_11 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9558989264243383,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 0.9929411764705882
+  },
+  "merida/2018_11 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9559226382347572,
+   "pares_significativos_en_ambas": 424,
+   "mismo_signo": 0.9929245283018868
+  },
+  "merida/2018_11 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9558529191449107,
+   "pares_significativos_en_ambas": 425,
+   "mismo_signo": 0.9905882352941177
+  },
+  "merida/2018_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9466456664856561,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 0.9952380952380953
+  },
+  "merida/2018_11 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9511564813581692,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 0.997624703087886
+  },
+  "merida/2018_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9301415944474491,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9924433249370277
+  },
+  "merida/2018_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9266558726229439,
+   "pares_significativos_en_ambas": 411,
+   "mismo_signo": 0.9878345498783455
+  },
+  "merida/2018_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.88011330232004,
+   "pares_significativos_en_ambas": 395,
+   "mismo_signo": 0.9898734177215189
+  },
+  "merida/2019_04 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.9645526152712364,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 0.9953379953379954
+  },
+  "merida/2019_04 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9639104447089554,
+   "pares_significativos_en_ambas": 436,
+   "mismo_signo": 0.9931192660550459
+  },
+  "merida/2019_04 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9631771694398368,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 0.9953810623556582
+  },
+  "merida/2019_04 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.962076118509035,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 0.9930715935334873
+  },
+  "merida/2019_04 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.962008798740809,
+   "pares_significativos_en_ambas": 431,
+   "mismo_signo": 0.9930394431554525
+  },
+  "merida/2019_04 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9620144444904515,
+   "pares_significativos_en_ambas": 430,
+   "mismo_signo": 0.9930232558139535
+  },
+  "merida/2019_04 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9618984567457604,
+   "pares_significativos_en_ambas": 432,
+   "mismo_signo": 0.9907407407407407
+  },
+  "merida/2019_04 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.953210775750049,
+   "pares_significativos_en_ambas": 423,
+   "mismo_signo": 0.9929078014184397
+  },
+  "merida/2019_04 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9576437853892469,
+   "pares_significativos_en_ambas": 429,
+   "mismo_signo": 0.9953379953379954
+  },
+  "merida/2019_04 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9363474675825558,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9900497512437811
+  },
+  "merida/2019_04 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9336891408941744,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.9856459330143541
+  },
+  "merida/2019_04 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.882342322064869,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9875311720698254
+  },
+  "merida/2019_11 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.9974182607900085,
+   "pares_significativos_en_ambas": 450,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9946677990405395,
+   "pares_significativos_en_ambas": 453,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9935715639300403,
+   "pares_significativos_en_ambas": 443,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9934397068847906,
+   "pares_significativos_en_ambas": 451,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9934303175763516,
+   "pares_significativos_en_ambas": 440,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9932708398019083,
+   "pares_significativos_en_ambas": 446,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9877347522055917,
+   "pares_significativos_en_ambas": 437,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9859389247509297,
+   "pares_significativos_en_ambas": 439,
+   "mismo_signo": 1.0
+  },
+  "merida/2019_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9601138507527998,
+   "pares_significativos_en_ambas": 397,
+   "mismo_signo": 0.9974811083123426
+  },
+  "merida/2019_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9617995621821749,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.992822966507177
+  },
+  "merida/2019_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9046451244216217,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9975062344139651
+  },
+  "merida/2020_04 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.9969660723091158,
+   "pares_significativos_en_ambas": 455,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_04 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9963893917526057,
+   "pares_significativos_en_ambas": 452,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_04 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9962268340146984,
+   "pares_significativos_en_ambas": 454,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_04 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9962140094570548,
+   "pares_significativos_en_ambas": 449,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_04 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9961144716032225,
+   "pares_significativos_en_ambas": 452,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_04 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9915741741256783,
+   "pares_significativos_en_ambas": 444,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_04 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9897708844366314,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_04 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9633368380573537,
+   "pares_significativos_en_ambas": 406,
+   "mismo_signo": 0.9975369458128078
+  },
+  "merida/2020_04 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.963593412982465,
+   "pares_significativos_en_ambas": 426,
+   "mismo_signo": 0.9929577464788732
+  },
+  "merida/2020_04 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9142640386117078,
+   "pares_significativos_en_ambas": 407,
+   "mismo_signo": 0.995085995085995
+  },
+  "merida/2020_11 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.9991542063089666,
+   "pares_significativos_en_ambas": 451,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_11 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.9989300976845111,
+   "pares_significativos_en_ambas": 459,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_11 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9989139533448357,
+   "pares_significativos_en_ambas": 451,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_11 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9988185851699072,
+   "pares_significativos_en_ambas": 451,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9942855927939421,
+   "pares_significativos_en_ambas": 444,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_11 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9931716655637552,
+   "pares_significativos_en_ambas": 445,
+   "mismo_signo": 1.0
+  },
+  "merida/2020_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9637785013802743,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9975062344139651
+  },
+  "merida/2020_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9621378098785485,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 0.9928741092636579
+  },
+  "merida/2020_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9106042510573914,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9975124378109452
+  },
+  "merida/2021_05 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.999797217919291,
+   "pares_significativos_en_ambas": 455,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_05 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9997890057932538,
+   "pares_significativos_en_ambas": 449,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_05 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9997214943559812,
+   "pares_significativos_en_ambas": 454,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_05 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9955566329592708,
+   "pares_significativos_en_ambas": 445,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_05 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9942929873802706,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_05 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9652717205442851,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9975062344139651
+  },
+  "merida/2021_05 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9639050930968298,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 0.9928571428571429
+  },
+  "merida/2021_05 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9148058582699845,
+   "pares_significativos_en_ambas": 402,
+   "mismo_signo": 0.9975124378109452
+  },
+  "merida/2021_11 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.9999944530689471,
+   "pares_significativos_en_ambas": 457,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_11 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9999406254197535,
+   "pares_significativos_en_ambas": 459,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.995715494898695,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_11 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9944594461409452,
+   "pares_significativos_en_ambas": 450,
+   "mismo_signo": 1.0
+  },
+  "merida/2021_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9653508753121939,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9975062344139651
+  },
+  "merida/2021_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.96402804933626,
+   "pares_significativos_en_ambas": 421,
+   "mismo_signo": 0.9928741092636579
+  },
+  "merida/2021_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.914264064601223,
+   "pares_significativos_en_ambas": 403,
+   "mismo_signo": 0.9950372208436724
+  },
+  "merida/2022_05 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.9999450137748733,
+   "pares_significativos_en_ambas": 452,
+   "mismo_signo": 1.0
+  },
+  "merida/2022_05 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9957239938163291,
+   "pares_significativos_en_ambas": 444,
+   "mismo_signo": 1.0
+  },
+  "merida/2022_05 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9944772612502856,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2022_05 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9653138373292458,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9974937343358395
+  },
+  "merida/2022_05 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9639541082972848,
+   "pares_significativos_en_ambas": 417,
+   "mismo_signo": 0.9928057553956835
+  },
+  "merida/2022_05 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9141514208011581,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9949874686716792
+  },
+  "merida/2022_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.9958130850010534,
+   "pares_significativos_en_ambas": 447,
+   "mismo_signo": 1.0
+  },
+  "merida/2022_11 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9944975047906203,
+   "pares_significativos_en_ambas": 448,
+   "mismo_signo": 1.0
+  },
+  "merida/2022_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9656908234106899,
+   "pares_significativos_en_ambas": 399,
+   "mismo_signo": 0.9974937343358395
+  },
+  "merida/2022_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9642551585370739,
+   "pares_significativos_en_ambas": 418,
+   "mismo_signo": 0.992822966507177
+  },
+  "merida/2022_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9145832254978662,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.9950124688279302
+  },
+  "merida/2023_11 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.9951963900800526,
+   "pares_significativos_en_ambas": 446,
+   "mismo_signo": 1.0
+  },
+  "merida/2023_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9682155640710017,
+   "pares_significativos_en_ambas": 405,
+   "mismo_signo": 1.0
+  },
+  "merida/2023_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.96613186078952,
+   "pares_significativos_en_ambas": 420,
+   "mismo_signo": 0.9952380952380953
+  },
+  "merida/2023_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9153037688875897,
+   "pares_significativos_en_ambas": 404,
+   "mismo_signo": 0.9975247524752475
+  },
+  "merida/2024_05 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.9689125708408987,
+   "pares_significativos_en_ambas": 404,
+   "mismo_signo": 1.0
+  },
+  "merida/2024_05 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9661403658260057,
+   "pares_significativos_en_ambas": 422,
+   "mismo_signo": 0.995260663507109
+  },
+  "merida/2024_05 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9175807729141128,
+   "pares_significativos_en_ambas": 407,
+   "mismo_signo": 0.9975429975429976
+  },
+  "merida/2024_11 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.9907583662570072,
+   "pares_significativos_en_ambas": 431,
+   "mismo_signo": 1.0
+  },
+  "merida/2024_11 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9441469737475721,
+   "pares_significativos_en_ambas": 413,
+   "mismo_signo": 1.0
+  },
+  "merida/2025_05 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.9514808341995329,
+   "pares_significativos_en_ambas": 433,
+   "mismo_signo": 1.0
   }
  },
  "entre_ciudades": {
@@ -31,6 +3433,222 @@
    "r_todos": 0.8346481027625686,
    "pares_significativos_en_ambas": 384,
    "mismo_signo": 0.9375
+  },
+  "aguascalientes/2016_01 vs hermosillo/2016_01": {
+   "pares": 625,
+   "r_todos": 0.7734742195597557,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9120234604105572
+  },
+  "aguascalientes/2016_01 vs merida/2016_01": {
+   "pares": 625,
+   "r_todos": 0.8362214372647773,
+   "pares_significativos_en_ambas": 381,
+   "mismo_signo": 0.926509186351706
+  },
+  "aguascalientes/2016_10 vs hermosillo/2016_10": {
+   "pares": 625,
+   "r_todos": 0.7824404238298592,
+   "pares_significativos_en_ambas": 334,
+   "mismo_signo": 0.9221556886227545
+  },
+  "aguascalientes/2016_10 vs merida/2016_10": {
+   "pares": 625,
+   "r_todos": 0.8421147271932485,
+   "pares_significativos_en_ambas": 383,
+   "mismo_signo": 0.9399477806788512
+  },
+  "aguascalientes/2017_03 vs hermosillo/2017_03": {
+   "pares": 625,
+   "r_todos": 0.7834690754115216,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9201183431952663
+  },
+  "aguascalientes/2017_03 vs merida/2017_03": {
+   "pares": 625,
+   "r_todos": 0.8355695638158747,
+   "pares_significativos_en_ambas": 367,
+   "mismo_signo": 0.9400544959128065
+  },
+  "aguascalientes/2017_11 vs hermosillo/2017_11": {
+   "pares": 625,
+   "r_todos": 0.7812277694678437,
+   "pares_significativos_en_ambas": 329,
+   "mismo_signo": 0.9331306990881459
+  },
+  "aguascalientes/2017_11 vs merida/2017_11": {
+   "pares": 625,
+   "r_todos": 0.8422550879783315,
+   "pares_significativos_en_ambas": 383,
+   "mismo_signo": 0.9425587467362925
+  },
+  "aguascalientes/2018_03 vs hermosillo/2018_03": {
+   "pares": 625,
+   "r_todos": 0.7829005217477718,
+   "pares_significativos_en_ambas": 331,
+   "mismo_signo": 0.9214501510574018
+  },
+  "aguascalientes/2018_03 vs merida/2018_03": {
+   "pares": 625,
+   "r_todos": 0.8311524301909844,
+   "pares_significativos_en_ambas": 375,
+   "mismo_signo": 0.936
+  },
+  "aguascalientes/2018_11 vs hermosillo/2018_11": {
+   "pares": 625,
+   "r_todos": 0.7789765730886583,
+   "pares_significativos_en_ambas": 341,
+   "mismo_signo": 0.9266862170087976
+  },
+  "aguascalientes/2018_11 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.8255683920191392,
+   "pares_significativos_en_ambas": 385,
+   "mismo_signo": 0.9454545454545454
+  },
+  "aguascalientes/2019_04 vs hermosillo/2019_04": {
+   "pares": 625,
+   "r_todos": 0.783049578300972,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.9262536873156342
+  },
+  "aguascalientes/2019_04 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.8329314824968344,
+   "pares_significativos_en_ambas": 387,
+   "mismo_signo": 0.9405684754521964
+  },
+  "aguascalientes/2019_11 vs hermosillo/2019_11": {
+   "pares": 625,
+   "r_todos": 0.7601578622183821,
+   "pares_significativos_en_ambas": 300,
+   "mismo_signo": 0.93
+  },
+  "aguascalientes/2019_11 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.8359621824027835,
+   "pares_significativos_en_ambas": 362,
+   "mismo_signo": 0.9392265193370166
+  },
+  "aguascalientes/2020_04 vs hermosillo/2020_04": {
+   "pares": 625,
+   "r_todos": 0.7658127069840186,
+   "pares_significativos_en_ambas": 308,
+   "mismo_signo": 0.9188311688311688
+  },
+  "aguascalientes/2020_04 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.8481507182385882,
+   "pares_significativos_en_ambas": 374,
+   "mismo_signo": 0.9411764705882353
+  },
+  "aguascalientes/2020_11 vs hermosillo/2020_11": {
+   "pares": 625,
+   "r_todos": 0.7705678559262579,
+   "pares_significativos_en_ambas": 317,
+   "mismo_signo": 0.9116719242902208
+  },
+  "aguascalientes/2020_11 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.8512374998150926,
+   "pares_significativos_en_ambas": 375,
+   "mismo_signo": 0.952
+  },
+  "aguascalientes/2021_05 vs hermosillo/2021_05": {
+   "pares": 625,
+   "r_todos": 0.7739052358976864,
+   "pares_significativos_en_ambas": 303,
+   "mismo_signo": 0.9306930693069307
+  },
+  "aguascalientes/2021_05 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.8535166486976112,
+   "pares_significativos_en_ambas": 359,
+   "mismo_signo": 0.9498607242339833
+  },
+  "aguascalientes/2021_11 vs hermosillo/2021_11": {
+   "pares": 625,
+   "r_todos": 0.7739530565917997,
+   "pares_significativos_en_ambas": 309,
+   "mismo_signo": 0.9385113268608414
+  },
+  "aguascalientes/2021_11 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.852362374885876,
+   "pares_significativos_en_ambas": 372,
+   "mismo_signo": 0.946236559139785
+  },
+  "aguascalientes/2022_05 vs hermosillo/2022_05": {
+   "pares": 625,
+   "r_todos": 0.7739526688188391,
+   "pares_significativos_en_ambas": 309,
+   "mismo_signo": 0.9352750809061489
+  },
+  "aguascalientes/2022_05 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.8524516587092678,
+   "pares_significativos_en_ambas": 365,
+   "mismo_signo": 0.9452054794520548
+  },
+  "aguascalientes/2022_11 vs hermosillo/2022_11": {
+   "pares": 625,
+   "r_todos": 0.758871492843523,
+   "pares_significativos_en_ambas": 307,
+   "mismo_signo": 0.9315960912052117
+  },
+  "aguascalientes/2022_11 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8524888168573405,
+   "pares_significativos_en_ambas": 363,
+   "mismo_signo": 0.9504132231404959
+  },
+  "aguascalientes/2023_11 vs hermosillo/2023_11": {
+   "pares": 625,
+   "r_todos": 0.7500859896362784,
+   "pares_significativos_en_ambas": 308,
+   "mismo_signo": 0.922077922077922
+  },
+  "aguascalientes/2023_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.852954622482512,
+   "pares_significativos_en_ambas": 369,
+   "mismo_signo": 0.948509485094851
+  },
+  "aguascalientes/2024_05 vs hermosillo/2024_05": {
+   "pares": 625,
+   "r_todos": 0.7512725414260052,
+   "pares_significativos_en_ambas": 315,
+   "mismo_signo": 0.926984126984127
+  },
+  "aguascalientes/2024_05 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.8540042266236638,
+   "pares_significativos_en_ambas": 366,
+   "mismo_signo": 0.9508196721311475
+  },
+  "aguascalientes/2024_11 vs hermosillo/2024_11": {
+   "pares": 625,
+   "r_todos": 0.7208654268286635,
+   "pares_significativos_en_ambas": 323,
+   "mismo_signo": 0.8947368421052632
+  },
+  "aguascalientes/2024_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.862535712742608,
+   "pares_significativos_en_ambas": 352,
+   "mismo_signo": 0.9517045454545454
+  },
+  "aguascalientes/2025_05 vs hermosillo/2025_05": {
+   "pares": 625,
+   "r_todos": 0.6827879957059632,
+   "pares_significativos_en_ambas": 319,
+   "mismo_signo": 0.9028213166144201
+  },
+  "aguascalientes/2025_05 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.8617717250313567,
+   "pares_significativos_en_ambas": 374,
+   "mismo_signo": 0.9251336898395722
   },
   "aguascalientes/2026_05 vs hermosillo/2026_05": {
    "pares": 625,
@@ -50,6 +3668,114 @@
    "pares_significativos_en_ambas": 356,
    "mismo_signo": 0.9101123595505618
   },
+  "hermosillo/2016_01 vs merida/2016_01": {
+   "pares": 625,
+   "r_todos": 0.7952883829340851,
+   "pares_significativos_en_ambas": 357,
+   "mismo_signo": 0.9243697478991597
+  },
+  "hermosillo/2016_10 vs merida/2016_10": {
+   "pares": 625,
+   "r_todos": 0.8031941324619583,
+   "pares_significativos_en_ambas": 353,
+   "mismo_signo": 0.9235127478753541
+  },
+  "hermosillo/2017_03 vs merida/2017_03": {
+   "pares": 625,
+   "r_todos": 0.7987746916977292,
+   "pares_significativos_en_ambas": 350,
+   "mismo_signo": 0.9228571428571428
+  },
+  "hermosillo/2017_11 vs merida/2017_11": {
+   "pares": 625,
+   "r_todos": 0.7991087629323714,
+   "pares_significativos_en_ambas": 355,
+   "mismo_signo": 0.923943661971831
+  },
+  "hermosillo/2018_03 vs merida/2018_03": {
+   "pares": 625,
+   "r_todos": 0.7964981715877836,
+   "pares_significativos_en_ambas": 354,
+   "mismo_signo": 0.923728813559322
+  },
+  "hermosillo/2018_11 vs merida/2018_11": {
+   "pares": 625,
+   "r_todos": 0.7955156167552337,
+   "pares_significativos_en_ambas": 363,
+   "mismo_signo": 0.928374655647383
+  },
+  "hermosillo/2019_04 vs merida/2019_04": {
+   "pares": 625,
+   "r_todos": 0.8000693435986325,
+   "pares_significativos_en_ambas": 362,
+   "mismo_signo": 0.9281767955801105
+  },
+  "hermosillo/2019_11 vs merida/2019_11": {
+   "pares": 625,
+   "r_todos": 0.7854242866668062,
+   "pares_significativos_en_ambas": 329,
+   "mismo_signo": 0.9574468085106383
+  },
+  "hermosillo/2020_04 vs merida/2020_04": {
+   "pares": 625,
+   "r_todos": 0.7822865305160387,
+   "pares_significativos_en_ambas": 330,
+   "mismo_signo": 0.9484848484848485
+  },
+  "hermosillo/2020_11 vs merida/2020_11": {
+   "pares": 625,
+   "r_todos": 0.7961626035390182,
+   "pares_significativos_en_ambas": 333,
+   "mismo_signo": 0.9429429429429429
+  },
+  "hermosillo/2021_05 vs merida/2021_05": {
+   "pares": 625,
+   "r_todos": 0.8035631868249214,
+   "pares_significativos_en_ambas": 339,
+   "mismo_signo": 0.943952802359882
+  },
+  "hermosillo/2021_11 vs merida/2021_11": {
+   "pares": 625,
+   "r_todos": 0.803059119338714,
+   "pares_significativos_en_ambas": 337,
+   "mismo_signo": 0.9376854599406528
+  },
+  "hermosillo/2022_05 vs merida/2022_05": {
+   "pares": 625,
+   "r_todos": 0.8030119692058618,
+   "pares_significativos_en_ambas": 340,
+   "mismo_signo": 0.9441176470588235
+  },
+  "hermosillo/2022_11 vs merida/2022_11": {
+   "pares": 625,
+   "r_todos": 0.8004210021487667,
+   "pares_significativos_en_ambas": 333,
+   "mismo_signo": 0.9459459459459459
+  },
+  "hermosillo/2023_11 vs merida/2023_11": {
+   "pares": 625,
+   "r_todos": 0.7830629548489901,
+   "pares_significativos_en_ambas": 336,
+   "mismo_signo": 0.9375
+  },
+  "hermosillo/2024_05 vs merida/2024_05": {
+   "pares": 625,
+   "r_todos": 0.7936057506642099,
+   "pares_significativos_en_ambas": 328,
+   "mismo_signo": 0.9237804878048781
+  },
+  "hermosillo/2024_11 vs merida/2024_11": {
+   "pares": 625,
+   "r_todos": 0.7327633843761787,
+   "pares_significativos_en_ambas": 312,
+   "mismo_signo": 0.9326923076923077
+  },
+  "hermosillo/2025_05 vs merida/2025_05": {
+   "pares": 625,
+   "r_todos": 0.7079326734173069,
+   "pares_significativos_en_ambas": 324,
+   "mismo_signo": 0.9135802469135802
+  },
   "hermosillo/2026_05 vs merida/2026_05": {
    "pares": 625,
    "r_todos": 0.7324129287605551,
@@ -66,6 +3792,168 @@
    "gini_corredores": 0.851,
    "comercios_en_5pct_calle": 0.51,
    "calle_sin_comercio": 0.688
+  },
+  "aguascalientes/2016_01": {
+   "comercios": 30104,
+   "centros": 24,
+   "pendiente_rango_tamano": -1.26,
+   "fraccion_en_centros": 0.216,
+   "gini_corredores": 0.85,
+   "comercios_en_5pct_calle": 0.509,
+   "calle_sin_comercio": 0.686
+  },
+  "aguascalientes/2016_10": {
+   "comercios": 30204,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.28,
+   "fraccion_en_centros": 0.213,
+   "gini_corredores": 0.85,
+   "comercios_en_5pct_calle": 0.509,
+   "calle_sin_comercio": 0.685
+  },
+  "aguascalientes/2017_03": {
+   "comercios": 30263,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.3,
+   "fraccion_en_centros": 0.213,
+   "gini_corredores": 0.849,
+   "comercios_en_5pct_calle": 0.508,
+   "calle_sin_comercio": 0.684
+  },
+  "aguascalientes/2017_11": {
+   "comercios": 30315,
+   "centros": 24,
+   "pendiente_rango_tamano": -1.31,
+   "fraccion_en_centros": 0.214,
+   "gini_corredores": 0.849,
+   "comercios_en_5pct_calle": 0.507,
+   "calle_sin_comercio": 0.684
+  },
+  "aguascalientes/2018_03": {
+   "comercios": 30513,
+   "centros": 25,
+   "pendiente_rango_tamano": -1.33,
+   "fraccion_en_centros": 0.214,
+   "gini_corredores": 0.848,
+   "comercios_en_5pct_calle": 0.505,
+   "calle_sin_comercio": 0.681
+  },
+  "aguascalientes/2018_11": {
+   "comercios": 30526,
+   "centros": 25,
+   "pendiente_rango_tamano": -1.34,
+   "fraccion_en_centros": 0.213,
+   "gini_corredores": 0.848,
+   "comercios_en_5pct_calle": 0.505,
+   "calle_sin_comercio": 0.681
+  },
+  "aguascalientes/2019_04": {
+   "comercios": 30733,
+   "centros": 25,
+   "pendiente_rango_tamano": -1.31,
+   "fraccion_en_centros": 0.216,
+   "gini_corredores": 0.847,
+   "comercios_en_5pct_calle": 0.503,
+   "calle_sin_comercio": 0.679
+  },
+  "aguascalientes/2019_11": {
+   "comercios": 31797,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.1,
+   "fraccion_en_centros": 0.197,
+   "gini_corredores": 0.845,
+   "comercios_en_5pct_calle": 0.502,
+   "calle_sin_comercio": 0.674
+  },
+  "aguascalientes/2020_04": {
+   "comercios": 32052,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.12,
+   "fraccion_en_centros": 0.198,
+   "gini_corredores": 0.845,
+   "comercios_en_5pct_calle": 0.502,
+   "calle_sin_comercio": 0.673
+  },
+  "aguascalientes/2020_11": {
+   "comercios": 32218,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.09,
+   "fraccion_en_centros": 0.197,
+   "gini_corredores": 0.845,
+   "comercios_en_5pct_calle": 0.502,
+   "calle_sin_comercio": 0.673
+  },
+  "aguascalientes/2021_05": {
+   "comercios": 31870,
+   "centros": 22,
+   "pendiente_rango_tamano": -1.18,
+   "fraccion_en_centros": 0.198,
+   "gini_corredores": 0.846,
+   "comercios_en_5pct_calle": 0.504,
+   "calle_sin_comercio": 0.675
+  },
+  "aguascalientes/2021_11": {
+   "comercios": 32027,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.21,
+   "fraccion_en_centros": 0.2,
+   "gini_corredores": 0.846,
+   "comercios_en_5pct_calle": 0.505,
+   "calle_sin_comercio": 0.675
+  },
+  "aguascalientes/2022_05": {
+   "comercios": 32028,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.2,
+   "fraccion_en_centros": 0.2,
+   "gini_corredores": 0.846,
+   "comercios_en_5pct_calle": 0.505,
+   "calle_sin_comercio": 0.675
+  },
+  "aguascalientes/2022_11": {
+   "comercios": 32034,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.21,
+   "fraccion_en_centros": 0.2,
+   "gini_corredores": 0.846,
+   "comercios_en_5pct_calle": 0.505,
+   "calle_sin_comercio": 0.675
+  },
+  "aguascalientes/2023_11": {
+   "comercios": 32087,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.21,
+   "fraccion_en_centros": 0.198,
+   "gini_corredores": 0.846,
+   "comercios_en_5pct_calle": 0.504,
+   "calle_sin_comercio": 0.675
+  },
+  "aguascalientes/2024_05": {
+   "comercios": 32255,
+   "centros": 24,
+   "pendiente_rango_tamano": -1.14,
+   "fraccion_en_centros": 0.202,
+   "gini_corredores": 0.845,
+   "comercios_en_5pct_calle": 0.504,
+   "calle_sin_comercio": 0.674
+  },
+  "aguascalientes/2024_11": {
+   "comercios": 36383,
+   "centros": 24,
+   "pendiente_rango_tamano": -1.01,
+   "fraccion_en_centros": 0.189,
+   "gini_corredores": 0.828,
+   "comercios_en_5pct_calle": 0.477,
+   "calle_sin_comercio": 0.637
+  },
+  "aguascalientes/2025_05": {
+   "comercios": 36645,
+   "centros": 26,
+   "pendiente_rango_tamano": -1.02,
+   "fraccion_en_centros": 0.198,
+   "gini_corredores": 0.828,
+   "comercios_en_5pct_calle": 0.477,
+   "calle_sin_comercio": 0.637
   },
   "aguascalientes/2026_05": {
    "comercios": 36639,
@@ -85,6 +3973,168 @@
    "comercios_en_5pct_calle": 0.487,
    "calle_sin_comercio": 0.702
   },
+  "hermosillo/2016_01": {
+   "comercios": 21326,
+   "centros": 23,
+   "pendiente_rango_tamano": -0.94,
+   "fraccion_en_centros": 0.25,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.487,
+   "calle_sin_comercio": 0.7
+  },
+  "hermosillo/2016_10": {
+   "comercios": 21428,
+   "centros": 24,
+   "pendiente_rango_tamano": -0.97,
+   "fraccion_en_centros": 0.252,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.487,
+   "calle_sin_comercio": 0.699
+  },
+  "hermosillo/2017_03": {
+   "comercios": 21461,
+   "centros": 25,
+   "pendiente_rango_tamano": -1.02,
+   "fraccion_en_centros": 0.253,
+   "gini_corredores": 0.841,
+   "comercios_en_5pct_calle": 0.486,
+   "calle_sin_comercio": 0.699
+  },
+  "hermosillo/2017_11": {
+   "comercios": 21495,
+   "centros": 26,
+   "pendiente_rango_tamano": -1.07,
+   "fraccion_en_centros": 0.254,
+   "gini_corredores": 0.841,
+   "comercios_en_5pct_calle": 0.486,
+   "calle_sin_comercio": 0.698
+  },
+  "hermosillo/2018_03": {
+   "comercios": 21678,
+   "centros": 27,
+   "pendiente_rango_tamano": -1.11,
+   "fraccion_en_centros": 0.258,
+   "gini_corredores": 0.839,
+   "comercios_en_5pct_calle": 0.483,
+   "calle_sin_comercio": 0.695
+  },
+  "hermosillo/2018_11": {
+   "comercios": 21619,
+   "centros": 26,
+   "pendiente_rango_tamano": -1.19,
+   "fraccion_en_centros": 0.256,
+   "gini_corredores": 0.84,
+   "comercios_en_5pct_calle": 0.483,
+   "calle_sin_comercio": 0.695
+  },
+  "hermosillo/2019_04": {
+   "comercios": 21851,
+   "centros": 27,
+   "pendiente_rango_tamano": -1.16,
+   "fraccion_en_centros": 0.253,
+   "gini_corredores": 0.839,
+   "comercios_en_5pct_calle": 0.482,
+   "calle_sin_comercio": 0.693
+  },
+  "hermosillo/2019_11": {
+   "comercios": 21871,
+   "centros": 24,
+   "pendiente_rango_tamano": -1.14,
+   "fraccion_en_centros": 0.229,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.492,
+   "calle_sin_comercio": 0.691
+  },
+  "hermosillo/2020_04": {
+   "comercios": 22245,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.12,
+   "fraccion_en_centros": 0.228,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.493,
+   "calle_sin_comercio": 0.69
+  },
+  "hermosillo/2020_11": {
+   "comercios": 22792,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.13,
+   "fraccion_en_centros": 0.228,
+   "gini_corredores": 0.841,
+   "comercios_en_5pct_calle": 0.493,
+   "calle_sin_comercio": 0.686
+  },
+  "hermosillo/2021_05": {
+   "comercios": 22600,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.13,
+   "fraccion_en_centros": 0.229,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.495,
+   "calle_sin_comercio": 0.688
+  },
+  "hermosillo/2021_11": {
+   "comercios": 22650,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.13,
+   "fraccion_en_centros": 0.23,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.495,
+   "calle_sin_comercio": 0.688
+  },
+  "hermosillo/2022_05": {
+   "comercios": 22649,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.13,
+   "fraccion_en_centros": 0.23,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.495,
+   "calle_sin_comercio": 0.688
+  },
+  "hermosillo/2022_11": {
+   "comercios": 22654,
+   "centros": 21,
+   "pendiente_rango_tamano": -1.11,
+   "fraccion_en_centros": 0.23,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.495,
+   "calle_sin_comercio": 0.688
+  },
+  "hermosillo/2023_11": {
+   "comercios": 22600,
+   "centros": 23,
+   "pendiente_rango_tamano": -1.2,
+   "fraccion_en_centros": 0.235,
+   "gini_corredores": 0.843,
+   "comercios_en_5pct_calle": 0.496,
+   "calle_sin_comercio": 0.689
+  },
+  "hermosillo/2024_05": {
+   "comercios": 22737,
+   "centros": 22,
+   "pendiente_rango_tamano": -1.17,
+   "fraccion_en_centros": 0.237,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.495,
+   "calle_sin_comercio": 0.687
+  },
+  "hermosillo/2024_11": {
+   "comercios": 23263,
+   "centros": 33,
+   "pendiente_rango_tamano": -1.13,
+   "fraccion_en_centros": 0.255,
+   "gini_corredores": 0.836,
+   "comercios_en_5pct_calle": 0.483,
+   "calle_sin_comercio": 0.678
+  },
+  "hermosillo/2025_05": {
+   "comercios": 23509,
+   "centros": 28,
+   "pendiente_rango_tamano": -1.26,
+   "fraccion_en_centros": 0.245,
+   "gini_corredores": 0.836,
+   "comercios_en_5pct_calle": 0.485,
+   "calle_sin_comercio": 0.677
+  },
   "hermosillo/2026_05": {
    "comercios": 23351,
    "centros": 29,
@@ -102,6 +4152,168 @@
    "gini_corredores": 0.864,
    "comercios_en_5pct_calle": 0.541,
    "calle_sin_comercio": 0.723
+  },
+  "merida/2016_01": {
+   "comercios": 34647,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.66,
+   "fraccion_en_centros": 0.162,
+   "gini_corredores": 0.863,
+   "comercios_en_5pct_calle": 0.54,
+   "calle_sin_comercio": 0.72
+  },
+  "merida/2016_10": {
+   "comercios": 34769,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.67,
+   "fraccion_en_centros": 0.162,
+   "gini_corredores": 0.862,
+   "comercios_en_5pct_calle": 0.539,
+   "calle_sin_comercio": 0.719
+  },
+  "merida/2017_03": {
+   "comercios": 34869,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.69,
+   "fraccion_en_centros": 0.161,
+   "gini_corredores": 0.862,
+   "comercios_en_5pct_calle": 0.538,
+   "calle_sin_comercio": 0.718
+  },
+  "merida/2017_11": {
+   "comercios": 34918,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.68,
+   "fraccion_en_centros": 0.161,
+   "gini_corredores": 0.862,
+   "comercios_en_5pct_calle": 0.538,
+   "calle_sin_comercio": 0.717
+  },
+  "merida/2018_03": {
+   "comercios": 35293,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.68,
+   "fraccion_en_centros": 0.164,
+   "gini_corredores": 0.86,
+   "comercios_en_5pct_calle": 0.535,
+   "calle_sin_comercio": 0.714
+  },
+  "merida/2018_11": {
+   "comercios": 35341,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.67,
+   "fraccion_en_centros": 0.164,
+   "gini_corredores": 0.86,
+   "comercios_en_5pct_calle": 0.535,
+   "calle_sin_comercio": 0.714
+  },
+  "merida/2019_04": {
+   "comercios": 35755,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.7,
+   "fraccion_en_centros": 0.163,
+   "gini_corredores": 0.859,
+   "comercios_en_5pct_calle": 0.534,
+   "calle_sin_comercio": 0.712
+  },
+  "merida/2019_11": {
+   "comercios": 36101,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.87,
+   "fraccion_en_centros": 0.154,
+   "gini_corredores": 0.852,
+   "comercios_en_5pct_calle": 0.519,
+   "calle_sin_comercio": 0.702
+  },
+  "merida/2020_04": {
+   "comercios": 36651,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.81,
+   "fraccion_en_centros": 0.154,
+   "gini_corredores": 0.852,
+   "comercios_en_5pct_calle": 0.519,
+   "calle_sin_comercio": 0.701
+  },
+  "merida/2020_11": {
+   "comercios": 37615,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.8,
+   "fraccion_en_centros": 0.155,
+   "gini_corredores": 0.851,
+   "comercios_en_5pct_calle": 0.519,
+   "calle_sin_comercio": 0.698
+  },
+  "merida/2021_05": {
+   "comercios": 37320,
+   "centros": 6,
+   "pendiente_rango_tamano": -2.42,
+   "fraccion_en_centros": 0.149,
+   "gini_corredores": 0.852,
+   "comercios_en_5pct_calle": 0.52,
+   "calle_sin_comercio": 0.7
+  },
+  "merida/2021_11": {
+   "comercios": 37485,
+   "centros": 6,
+   "pendiente_rango_tamano": -2.42,
+   "fraccion_en_centros": 0.149,
+   "gini_corredores": 0.852,
+   "comercios_en_5pct_calle": 0.519,
+   "calle_sin_comercio": 0.699
+  },
+  "merida/2022_05": {
+   "comercios": 37488,
+   "centros": 6,
+   "pendiente_rango_tamano": -2.42,
+   "fraccion_en_centros": 0.149,
+   "gini_corredores": 0.852,
+   "comercios_en_5pct_calle": 0.519,
+   "calle_sin_comercio": 0.699
+  },
+  "merida/2022_11": {
+   "comercios": 37484,
+   "centros": 6,
+   "pendiente_rango_tamano": -2.42,
+   "fraccion_en_centros": 0.148,
+   "gini_corredores": 0.852,
+   "comercios_en_5pct_calle": 0.519,
+   "calle_sin_comercio": 0.699
+  },
+  "merida/2023_11": {
+   "comercios": 37642,
+   "centros": 6,
+   "pendiente_rango_tamano": -2.4,
+   "fraccion_en_centros": 0.147,
+   "gini_corredores": 0.851,
+   "comercios_en_5pct_calle": 0.519,
+   "calle_sin_comercio": 0.699
+  },
+  "merida/2024_05": {
+   "comercios": 37946,
+   "centros": 6,
+   "pendiente_rango_tamano": -2.37,
+   "fraccion_en_centros": 0.146,
+   "gini_corredores": 0.851,
+   "comercios_en_5pct_calle": 0.518,
+   "calle_sin_comercio": 0.697
+  },
+  "merida/2024_11": {
+   "comercios": 37738,
+   "centros": 15,
+   "pendiente_rango_tamano": -1.64,
+   "fraccion_en_centros": 0.153,
+   "gini_corredores": 0.839,
+   "comercios_en_5pct_calle": 0.494,
+   "calle_sin_comercio": 0.684
+  },
+  "merida/2025_05": {
+   "comercios": 39106,
+   "centros": 9,
+   "pendiente_rango_tamano": -1.39,
+   "fraccion_en_centros": 0.147,
+   "gini_corredores": 0.841,
+   "comercios_en_5pct_calle": 0.501,
+   "calle_sin_comercio": 0.681
   },
   "merida/2026_05": {
    "comercios": 39226,
