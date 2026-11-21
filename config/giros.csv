@@ -1,0 +1,26 @@
+grupo,nombre,prefijos_scian
+abarrotes,Abarrotes y misceláneas,461110
+conveniencia,Minisupers y tiendas de conveniencia,462112
+supermercados,Supermercados,462111
+carnes,Carnicerías y pollerías,461121|461122|461123
+frutas,Frutas y verduras,461130
+panaderias,Panaderías,311811|311812
+tortillerias,Tortillerías,311830
+farmacias,Farmacias,464111|464112
+papelerias,Papelerías,465311
+ropa,Ropa,4632
+calzado,Calzado,4633
+ferreterias,Ferreterías y tlapalerías,467111
+refacciones,Refacciones para autos,468211
+electronica,Teléfonos y cómputo,46621
+muebles,Muebles y electrodomésticos,4661
+opticas,Ópticas,464121
+restaurantes,Restaurantes y comida,7225
+bares,Bares y cantinas,722412
+esteticas,Salones de belleza y peluquerías,812110
+lavanderias,Lavanderías y tintorerías,81221
+talleres_auto,Talleres de autos,8111
+consultorios,Consultorios médicos y dentales,6211|6212
+bancos,Bancos,522110
+otro_comercio,Otro comercio al por menor,46
+otros_servicios,Otros servicios personales,81

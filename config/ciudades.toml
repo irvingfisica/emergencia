@@ -1,0 +1,17 @@
+# Ciudades de estudio: localidad urbana principal (clave INEGI de 9 dígitos:
+# entidad + municipio + localidad). Ciudades medias relativamente aisladas.
+
+[[ciudad]]
+id = "aguascalientes"
+nombre = "Aguascalientes"
+cvegeo = "010010001"
+
+[[ciudad]]
+id = "merida"
+nombre = "Mérida"
+cvegeo = "310500001"
+
+[[ciudad]]
+id = "hermosillo"
+nombre = "Hermosillo"
+cvegeo = "260300001"

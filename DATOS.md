@@ -11,6 +11,14 @@ pase). Todos son públicos y se pueden reconstruir con los scripts de este repo.
 | Población por manzana | INEGI, Censo 2020, resultados por AGEB y manzana urbana | Descarga por entidad | Demanda asignada a la red (fase 0) |
 | Marco Geoestadístico | INEGI | Descarga | Límites de localidades y manzanas |
 
+## Ciudades
+
+`uv run python -m emergencia.ciudad --denue datos/denue --marco <localidades 00l.parquet> --osm <mexico.osm.pbf>`
+prepara cada ciudad de [config/ciudades.toml](config/ciudades.toml) en `datos/ciudades/<ciudad>/`:
+polígono de la localidad urbana, red de calles (`tramos.parquet`, EPSG:6372) y comercios de
+todas las versiones del DENUE con su grupo de giro ([config/giros.csv](config/giros.csv)) y su
+posición sobre la red. El Marco Geoestadístico se usa convertido a Parquet (capa `00l`).
+
 ## DENUE preparado
 
 Una fila por unidad económica y versión. Columnas:

@@ -1,0 +1,116 @@
+{
+ "entre_versiones": {
+  "aguascalientes/2015 vs aguascalientes/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8772983362883293,
+   "pares_significativos_en_ambas": 401,
+   "mismo_signo": 0.972568578553616
+  },
+  "hermosillo/2015 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8800515228330489,
+   "pares_significativos_en_ambas": 338,
+   "mismo_signo": 0.9792899408284024
+  },
+  "merida/2015 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8860032161631102,
+   "pares_significativos_en_ambas": 396,
+   "mismo_signo": 0.9823232323232324
+  }
+ },
+ "entre_ciudades": {
+  "aguascalientes/2015 vs hermosillo/2015": {
+   "pares": 625,
+   "r_todos": 0.7616200519666391,
+   "pares_significativos_en_ambas": 337,
+   "mismo_signo": 0.9317507418397626
+  },
+  "aguascalientes/2015 vs merida/2015": {
+   "pares": 625,
+   "r_todos": 0.8346481027625686,
+   "pares_significativos_en_ambas": 384,
+   "mismo_signo": 0.9375
+  },
+  "aguascalientes/2026_05 vs hermosillo/2026_05": {
+   "pares": 625,
+   "r_todos": 0.7241009391868438,
+   "pares_significativos_en_ambas": 325,
+   "mismo_signo": 0.9138461538461539
+  },
+  "aguascalientes/2026_05 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.8607320801014885,
+   "pares_significativos_en_ambas": 365,
+   "mismo_signo": 0.9342465753424658
+  },
+  "hermosillo/2015 vs merida/2015": {
+   "pares": 625,
+   "r_todos": 0.7896167136155094,
+   "pares_significativos_en_ambas": 356,
+   "mismo_signo": 0.9101123595505618
+  },
+  "hermosillo/2026_05 vs merida/2026_05": {
+   "pares": 625,
+   "r_todos": 0.7324129287605551,
+   "pares_significativos_en_ambas": 317,
+   "mismo_signo": 0.9274447949526814
+  }
+ },
+ "cifras": {
+  "aguascalientes/2015": {
+   "comercios": 29685,
+   "centros": 25,
+   "pendiente_rango_tamano": -1.29,
+   "fraccion_en_centros": 0.214,
+   "gini_corredores": 0.851,
+   "comercios_en_5pct_calle": 0.51,
+   "calle_sin_comercio": 0.688
+  },
+  "aguascalientes/2026_05": {
+   "comercios": 36639,
+   "centros": 25,
+   "pendiente_rango_tamano": -1.02,
+   "fraccion_en_centros": 0.193,
+   "gini_corredores": 0.83,
+   "comercios_en_5pct_calle": 0.481,
+   "calle_sin_comercio": 0.639
+  },
+  "hermosillo/2015": {
+   "comercios": 21036,
+   "centros": 28,
+   "pendiente_rango_tamano": -1.13,
+   "fraccion_en_centros": 0.26,
+   "gini_corredores": 0.843,
+   "comercios_en_5pct_calle": 0.487,
+   "calle_sin_comercio": 0.702
+  },
+  "hermosillo/2026_05": {
+   "comercios": 23351,
+   "centros": 29,
+   "pendiente_rango_tamano": -1.19,
+   "fraccion_en_centros": 0.244,
+   "gini_corredores": 0.838,
+   "comercios_en_5pct_calle": 0.488,
+   "calle_sin_comercio": 0.68
+  },
+  "merida/2015": {
+   "comercios": 34082,
+   "centros": 6,
+   "pendiente_rango_tamano": -1.74,
+   "fraccion_en_centros": 0.161,
+   "gini_corredores": 0.864,
+   "comercios_en_5pct_calle": 0.541,
+   "calle_sin_comercio": 0.723
+  },
+  "merida/2026_05": {
+   "comercios": 39226,
+   "centros": 10,
+   "pendiente_rango_tamano": -1.27,
+   "fraccion_en_centros": 0.146,
+   "gini_corredores": 0.842,
+   "comercios_en_5pct_calle": 0.504,
+   "calle_sin_comercio": 0.681
+  }
+ }
+}
