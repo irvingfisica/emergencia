@@ -199,10 +199,13 @@ el buscador puede codificar el patrón directamente en vez de hacerlo emerger.
    patrones. El modelo de referencia es un sistema dinámico de lugares centrales
    (tipo Harris–Wilson), ya implementado en
    [central_theory_sim](https://github.com/irvingfisica/central_theory_sim). Tiene
-   una transición en el parámetro de economías de escala η: muchos centros
-   pequeños de un lado, pocos grandes del otro. Si el método no recupera η y la
-   forma de la regla en datos sintéticos, no se puede confiar en lo que encuentre
-   en datos reales.
+   una transición en el exponente de la distancia η: con η chico la competencia es
+   de largo alcance y sobreviven pocos centros grandes; con η grande, muchos
+   chicos. Si el método no recupera la forma de la regla y no ordena η en datos
+   sintéticos, no se puede confiar en lo que encuentre en datos reales. Como ese
+   modelo no es local (el ingreso de cada centro depende de todos), la prueba se
+   hace en dos partes: primero con una verdad escrita en el propio DSL y después
+   con el modelo de lugares centrales ([docs/fase1.md](docs/fase1.md)).
 2. **Patrones reservados:** las reglas se ajustan con unos patrones y se evalúan
    en otros.
 3. **Fuera de muestra:** otro periodo, otras ciudades y otros giros.
@@ -233,7 +236,7 @@ el buscador puede codificar el patrón directamente en vez de hacerlo emerger.
 | Fase | Qué | Resultado |
 |---|---|---|
 | **0. Datos y patrones observados** | Serie del DENUE, red y población para 2–3 ciudades. Calcular P1–P5 y verificar que los patrones son claros y estables entre fotos. | Mapas y patrones observados. Decisión de ciudades y giros. **Primeros resultados (P1–P3): [docs/fase0.md](docs/fase0.md).** |
-| **1. Simulador y prueba de recuperación** | Simulador sobre la red y DSL. Recuperar las reglas de lugares centrales a partir de sus patrones. | El método recupera la verdad conocida (o se sabe por qué no). |
+| **1. Simulador y prueba de recuperación** | Simulador sobre la red y DSL. Recuperar las reglas de lugares centrales a partir de sus patrones. | El método recupera la verdad conocida (o se sabe por qué no). **Resultados: [docs/fase1.md](docs/fase1.md)** — recupera una regla del DSL; ante lugares centrales ordena η pero ninguna regla local de radio corto reproduce los patrones. |
 | **2. Búsqueda en una ciudad** | Ciclo completo en una ciudad, modo génesis. | Primer frente de Pareto de reglas reales. |
 | **3. Validación** | Modo evolución 2015 → 2020 → 2025, choque de 2020, patrones reservados. | Reglas que sobreviven a la validación. |
 | **4. Universalidad** | Mismas reglas en otras ciudades. | Qué es general y qué es local. |

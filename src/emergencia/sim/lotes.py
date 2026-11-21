@@ -77,7 +77,9 @@ class Lotes:
         return Lotes(tabla, D)
 
 
-def construir(tramos: gpd.GeoDataFrame, pob: pd.DataFrame, paso: float) -> tuple[pd.DataFrame, sparse.csr_matrix]:
+def grafo(tramos: gpd.GeoDataFrame, paso: float) -> tuple[pd.DataFrame, sparse.csr_matrix]:
+    """Tabla de lotes y grafo de la red (nodos 0..n-1 son lotes; después las
+    intersecciones). Con el mismo paso, los lotes coinciden con los de `construir`."""
     tramos = tramos.sort_values("tramo").reset_index(drop=True)
     L = tramos.largo.to_numpy()
     n = np.maximum(1, np.round(L / paso)).astype(int)
@@ -113,6 +115,12 @@ def construir(tramos: gpd.GeoDataFrame, pob: pd.DataFrame, paso: float) -> tuple
     N = nl + len(nodos)
     w = np.maximum(np.array(w), 0.01)
     G = sparse.coo_matrix((w, (a, b)), shape=(N, N)).tocsr()
+    return tabla, G
+
+
+def construir(tramos: gpd.GeoDataFrame, pob: pd.DataFrame, paso: float) -> tuple[pd.DataFrame, sparse.csr_matrix]:
+    tabla, G = grafo(tramos, paso)
+    nl = len(tabla)
 
     def bloques(fuentes, limite, lote=128):
         for i in range(0, len(fuentes), lote):
