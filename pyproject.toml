@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Inferencia de reglas mínimas de agentes a partir de patrones colectivos observados"
 requires-python = ">=3.13"
 dependencies = [
+    "cma>=4.6.0",
     "duckdb>=2.0.1",
     "geopandas>=1.2.0",
     "matplotlib>=3.11.2",
