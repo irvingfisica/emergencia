@@ -9,12 +9,15 @@ Sale en <salida>/<ciudad>/:
   tramos.parquet     red de calles (ver emergencia.red)
   comercios.parquet  una fila por unidad y versión, con su grupo de giro y su
                      posición sobre la red (tramo, t = metros desde u)
+  poblacion.parquet  (con --censo y --marco-estados) población 2020 por manzana,
+                     ubicada sobre la red
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import tomllib
+import zipfile
 from pathlib import Path
 
 import duckdb
@@ -98,11 +101,36 @@ def ubicar(df: pd.DataFrame, tramos: gpd.GeoDataFrame) -> pd.DataFrame:
     return df.reset_index(drop=True)
 
 
+def poblacion(censo: Path, marco_estados: Path, cvegeo_loc: str, poligono, tramos) -> pd.DataFrame:
+    """Población 2020 por manzana de la localidad, en el centroide de la manzana y
+    ubicada sobre la red. POBTOT confidencial ('*') se toma como 1 (manzanas de 1–2
+    habitantes); las manzanas sin dato de censo se descartan."""
+    ent = cvegeo_loc[:2]
+    zc = next(censo.glob(f"*_{ent}.zip"))
+    with zipfile.ZipFile(zc) as z:
+        n = next(x for x in z.namelist() if "conjunto_de_datos" in x and x.lower().endswith(".csv"))
+        with z.open(n) as f:
+            c = pd.read_csv(f, dtype=str, encoding="utf-8-sig", usecols=["ENTIDAD", "MUN", "LOC", "AGEB", "MZA", "POBTOT"])
+    c = c[(c.MZA != "000") & (c.ENTIDAD + c.MUN + c.LOC == cvegeo_loc)]
+    c["cvegeo"] = c.ENTIDAD + c.MUN + c.LOC + c.AGEB + c.MZA
+    c["pob"] = pd.to_numeric(c.POBTOT.replace("*", "1"), errors="coerce").fillna(0)
+    zm = next(marco_estados.glob(f"{ent}_*.zip"))
+    m = gpd.read_file(f"zip://{zm.as_posix()}!conjunto_de_datos/{ent}m.shp", columns=["CVEGEO"])
+    m = m[m.CVEGEO.str.startswith(cvegeo_loc)].to_crs(red.CRS_METRICO)
+    m = m.merge(c[["cvegeo", "pob"]], left_on="CVEGEO", right_on="cvegeo")
+    m = m[m.pob > 0]
+    cen = m.geometry.representative_point()
+    df = pd.DataFrame({"cvegeo": m.cvegeo.values, "pob": m.pob.values, "x": cen.x.values, "y": cen.y.values})
+    return ubicar(df, tramos)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--denue", type=Path, required=True, help="carpeta con denue_<versión>.parquet")
     ap.add_argument("--marco", type=Path, required=True, help="Marco Geoestadístico, localidades (00l) en Parquet")
     ap.add_argument("--osm", type=Path, required=True, help="extracto PBF de OpenStreetMap")
+    ap.add_argument("--censo", type=Path, help="carpeta con ageb_mza_NN.zip (Censo 2020, AGEB y manzana)")
+    ap.add_argument("--marco-estados", type=Path, help="carpeta con los ZIP estatales del Marco (NN_*.zip, capa NNm)")
     ap.add_argument("--ciudad", nargs="*")
     ap.add_argument("--salida", type=Path, default=RAIZ / "datos" / "ciudades")
     ap.add_argument("--rehacer-red", action="store_true")
@@ -131,6 +159,10 @@ def main() -> None:
         df.to_parquet(d / "comercios.parquet")
         por_version = df.groupby("version").size().to_dict()
         print(f"{c['nombre']}: {len(t):,} tramos ({t.largo.sum() / 1000:,.0f} km); comercios por versión: {por_version}")
+        if a.censo and a.marco_estados:
+            p = poblacion(a.censo, a.marco_estados, c["cvegeo"], poligono, t)
+            p.to_parquet(d / "poblacion.parquet")
+            print(f"  población 2020 en {len(p):,} manzanas: {p.pob.sum():,.0f} habitantes")
 
 
 if __name__ == "__main__":
