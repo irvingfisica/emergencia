@@ -1,11 +1,11 @@
 # Fase 0: patrones observados
 
-Primer cálculo de los patrones P1–P3 (ver [README](../README.md#41-patrones-los-observables))
+Primer cálculo de los patrones P1–P5 (ver [README](../README.md#41-patrones-los-observables))
 en tres ciudades medias, con el DENUE de 2015 y de mayo 2026. El objetivo de esta fase es
 saber si los patrones son lo bastante claros y estables para servir de oráculo.
 
-**Respuesta corta: sí.** Los tres patrones son fuertes, casi no cambian en 11 años y se
-parecen mucho entre ciudades.
+**Respuesta corta: sí.** Los patrones son fuertes, casi no cambian en 11 años y se
+parecen mucho entre ciudades, aunque más de la mitad de los comercios se renovó.
 
 ## Datos
 
@@ -99,15 +99,89 @@ Mérida y Hermosillo: [mapa](img/fase0_mapa_merida.png) · [Jensen](img/fase0_je
 [mapa](img/fase0_mapa_hermosillo.png) · [Jensen](img/fase0_jensen_hermosillo.png).
 Cifras completas: [fase0_comparacion.json](fase0_comparacion.json).
 
+## P4. Relación con la demanda
+
+Población del Censo 2020 por manzana (Aguascalientes 864 mil, Mérida 917 mil, Hermosillo
+851 mil habitantes en la localidad), ubicada sobre la red. Para cada giro se mide la
+distancia mediana sobre la red, ponderada por población, de una manzana al comercio más
+cercano de ese giro, y se divide entre la misma medida con el mismo número de comercios
+puestos al azar sobre las calles. Menos de 1: el giro se reparte para quedar cerca de la
+gente. Más de 1: se concentra aunque quede más lejos.
+
+![Demanda, Aguascalientes 2026](img/fase0_demanda_aguascalientes.png)
+
+| Giro | Aguascalientes 2015 / 2026 | Mérida 2015 / 2026 | Hermosillo 2015 / 2026 |
+|---|---|---|---|
+| Abarrotes | 0.73 / 0.70 | 0.80 / 0.78 | 0.78 / 0.75 |
+| Tortillerías | 0.72 / 0.71 | 0.76 / 0.76 | 0.76 / 0.78 |
+| Papelerías | 0.74 / 0.74 | 0.79 / 0.80 | 0.80 / 0.75 |
+| Ropa | 1.23 / 1.19 | 2.00 / 1.33 | 2.16 / 1.41 |
+| Calzado | 1.58 / 1.66 | 1.98 / 1.61 | 1.94 / 1.61 |
+| Consultorios | 1.70 / 1.53 | 1.65 / 1.54 | 2.09 / 2.12 |
+| Bancos | 1.86 / 1.88 | 1.63 / 1.82 | 1.88 / 2.18 |
+
+Es la misma separación de P1 vista desde la población: los bienes de cercanía están más
+cerca de la gente que el azar (0.70–0.80) y los de comparación más lejos (1.2–2.2), con los
+mismos valores en las tres ciudades. Además hay una **tendencia**: entre 2015 y 2026 los
+bienes de comparación se dispersan (la ropa en Mérida pasa de 2.0 a 1.33; en Hermosillo, de
+2.16 a 1.41).
+
+Mérida: [demanda](img/fase0_demanda_merida.png) · Hermosillo: [demanda](img/fase0_demanda_hermosillo.png).
+
+## P5. Dinámica (2015 → 2026)
+
+Cada unidad se sigue por su `id` del DENUE.
+
+| | Comercios 2015 | Siguen en 2026 | Altas | Bajas | Cambian de giro | Se mueven > 50 m |
+|---|---|---|---|---|---|---|
+| Aguascalientes | 29,685 | 44 % | 23,480 | 16,526 | 733 | 1,284 |
+| Mérida | 34,082 | 40 % | 25,517 | 20,373 | 953 | 1,628 |
+| Hermosillo | 21,036 | 41 % | 14,640 | 12,325 | 612 | 970 |
+
+En 11 años se renueva más de la mitad del comercio, pero los patrones P1–P4 casi no
+cambian. **El patrón se mantiene mientras sus ocupantes se reemplazan.** Es la situación
+del flock: la forma persiste aunque los pájaros cambien de lugar.
+
+Dos resultados que orientan las reglas del simulador:
+
+1. **Las altas se ubican cerca de su propio giro, pero menos que los que ya estaban.**
+   Comercios del mismo giro a ≤ 200 m alrededor de las altas, entre lo mismo alrededor de
+   puntos al azar de la calle, comparado con lo mismo alrededor de los comercios que ya
+   existían:
+
+   | Giro | Aguascalientes: altas / existentes | Mérida | Hermosillo |
+   |---|---|---|---|
+   | Ropa | 26 / 43 | 72 / 128 | 56 / 106 |
+   | Calzado | 200 / 229 | 155 / 317 | 101 / 140 |
+   | Consultorios | 22 / 35 | 85 / 118 | 92 / 105 |
+   | Abarrotes | 2.0 / 2.4 | 2.3 / 2.4 | 1.8 / 2.0 |
+
+   Es coherente con la dispersión de P4.
+
+2. **La tasa de baja casi no depende de la competencia cercana.** Por ejemplo, la
+   fracción de abarrotes que desaparece es la misma (≈ 0.46 en Aguascalientes, ≈ 0.55 en
+   Mérida y Hermosillo) con 0, 1–2 o 3+ abarrotes a ≤ 200 m. En ropa y calzado es incluso
+   algo menor con más vecinos del mismo giro. Con estos datos, **el patrón se sostiene por
+   dónde se instalan los comercios, no por cuáles mueren**: una regla de localización con
+   una tasa de baja casi constante podría bastar.
+
+Cuidado: entre 2015 y 2026 hay dos Censos Económicos, así que parte de las altas y bajas
+es actualización del directorio y no apertura o cierre real. Con la serie completa se
+podrá separar por periodos censales.
+
 ## Qué sigue
 
-1. Repetir con toda la serie del DENUE (2015–2026) para ver la dinámica, cuidando que las
-   fotos útiles para comercios pequeños son las posteriores a los Censos Económicos.
-2. P4 (relación con la demanda): población por manzana del Censo 2020 asignada a la red.
-3. P5 (dinámica): con el `id` que persiste entre versiones, dónde nacen y mueren comercios.
-4. Fase 1: simulador sobre la red y prueba de recuperación con lugares centrales.
+1. Repetir con toda la serie del DENUE (2015–2026), separando la dinámica por periodos
+   censales.
+2. Fase 1: simulador sobre la red y prueba de recuperación con lugares centrales.
 
-Para el simulador, esta fase deja dos objetivos claros: (a) la matriz de Jensen tiene
-estructura en dos bloques que una regla mínima debería reproducir, y (b) la concentración
-en corredores es extrema y casi idéntica entre ciudades, así que la regla tendrá que
-explicarla, probablemente a través de la red de calles.
+Para el simulador, esta fase deja cuatro objetivos claros:
+
+- **(a) Atracción y repulsión:** la matriz de Jensen tiene una estructura en dos bloques
+  que una regla mínima debería reproducir.
+- **(b) Corredores:** la concentración es extrema y casi idéntica entre ciudades, así que
+  la regla tendrá que explicarla, probablemente a través de la red de calles.
+- **(c) Acceso a la población:** los giros de cercanía y los de comparación se separan
+  igual en las tres ciudades.
+- **(d) Dinámica:** la evidencia apunta a una regla de localización con atracción por el
+  propio giro y una tasa de baja casi constante.
