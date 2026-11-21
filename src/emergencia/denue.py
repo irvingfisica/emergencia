@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import codecs
+import csv
 import re
 import shutil
 import tempfile
@@ -87,8 +88,35 @@ def _a_utf8(f: Path) -> Path:
     return g
 
 
-def _select(con: duckdb.DuckDBPyConnection, csv: Path, version: str) -> str:
-    lector = f"read_csv('{csv.as_posix()}', all_varchar=true, header=true, quote='\"')"
+def _reparar_encabezado(f: Path) -> None:
+    """Algunos CSV (2016_01) traen el encabezado y el primer registro en la misma línea
+    ('...,"fecha_alta"6281881",...'). Si la primera línea tiene más campos que la segunda,
+    se separan y se reescribe el archivo."""
+    with open(f, encoding="utf-8-sig", newline="") as fh:
+        r = csv.reader(fh)
+        h, segunda = next(r, None), next(r, None)
+    if not h or not segunda or len(h) <= len(segunda):
+        return
+    n = len(segunda)
+    nombres, resto = h[:n], h[n:]
+    nombre, _, pegado = nombres[-1].partition('"')
+    nombres[-1] = nombre
+    primero = [pegado] + resto if pegado else resto
+    g = f.with_suffix(".rep.csv")
+    with open(f, encoding="utf-8-sig", newline="") as a, open(g, "w", encoding="utf-8", newline="") as b:
+        a.readline()  # la línea fusionada (sin saltos de línea entre comillas)
+        w = csv.writer(b, quoting=csv.QUOTE_ALL, lineterminator="\n")
+        w.writerow(nombres)
+        if len(primero) == n:
+            w.writerow(primero)
+        shutil.copyfileobj(a, b, 1 << 22)
+    g.replace(f)
+    print(f"  {f.name}: encabezado pegado al primer registro; separado"
+          + ("" if len(primero) == n else " (primer registro descartado)"), flush=True)
+
+
+def _select(con: duckdb.DuckDBPyConnection, archivo: Path, version: str) -> str:
+    lector = f"read_csv('{archivo.as_posix()}', all_varchar=true, header=true, quote='\"')"
     originales = [r[0] for r in con.execute(f"DESCRIBE SELECT * FROM {lector}").fetchall()]
     por_norm = {_norm(c): c for c in originales}
     partes = []
@@ -124,10 +152,11 @@ def preparar_version(zips: list[Path], version: str, salida: Path, tmp_base: Pat
                     nl = n.lower()
                     if not nl.endswith(".csv") or "diccionario" in nl or "metadato" in nl:
                         continue
-                    csv = _a_utf8(Path(z.extract(n, tmp)))
+                    archivo = _a_utf8(Path(z.extract(n, tmp)))
+                    _reparar_encabezado(archivo)
                     p = tmp / f"parte_{len(partes):03d}.parquet"
-                    con.execute(f"COPY ({_select(con, csv, version)}) TO '{p.as_posix()}' (FORMAT parquet)")
-                    csv.unlink()
+                    con.execute(f"COPY ({_select(con, archivo, version)}) TO '{p.as_posix()}' (FORMAT parquet)")
+                    archivo.unlink()
                     partes.append(p)
         con.execute(
             f"COPY (SELECT * FROM read_parquet('{tmp.as_posix()}/parte_*.parquet') ORDER BY cve_ent, cve_mun, id) "
