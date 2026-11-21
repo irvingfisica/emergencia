@@ -16,10 +16,18 @@ from __future__ import annotations
 
 import numpy as np
 
-from .lotes import CAPACIDAD, Lotes
-from .reglas import Modelo
+from .lotes import CAPACIDAD, RADIOS_LARGOS, Lotes
+from .reglas import RADIOS as TODOS_RADIOS, Modelo
 
 RADIOS = (100.0, 200.0)
+
+
+def partir(nombre: str) -> tuple[str, float] | None:
+    """'mismo1000' -> ('mismo', 1000.0); 'eta10200' -> ('eta10', 200.0)."""
+    for r in sorted(TODOS_RADIOS, key=lambda r: -len(str(r))):
+        if nombre.endswith(str(r)) and len(nombre) > len(str(r)):
+            return nombre[:-len(str(r))], float(r)
+    return None
 
 
 class _Entorno:
@@ -41,6 +49,11 @@ class _Entorno:
             v = self.edad
         elif nombre in ("pob200", "pob500"):
             v = self._sel(s.pob[nombre])
+        elif nombre in ("pob1000", "pob2000"):
+            r = float(nombre[3:])
+            if r not in s.pob_larga:
+                s.pob_larga[r] = (s.L.Wm(r) @ s.L.malla()["pob"])[s.celda] / 1000
+            v = self._sel(s.pob_larga[r])
         elif nombre == "via":
             v = self._sel(s.via).astype(float)
         elif nombre == "avenida":
@@ -48,15 +61,18 @@ class _Entorno:
         elif nombre == "peatonal":
             v = self._sel((s.via == 4).astype(float))
         else:
-            base, r = nombre[:-3], float(nombre[-3:])
-            C = s.C[r]
+            base, r = partir(nombre)
+            C = s.conteos(r)
+            uno = 1 if self.propio else 0
             if base == "mismo":
-                v = self._sel(C[:, self.k]) - (1 if self.propio else 0)
+                v = self._sel(C[:, self.k]) - uno
             elif base == "total":
-                v = self._sel(C.sum(1)) - (1 if self.propio else 0)
+                v = self._sel(C.sum(1)) - uno
+            elif base == "otros":
+                v = self._sel(C.sum(1) - C[:, self.k])
             else:
                 v = self._sel(C[:, s.indice[base]])
-            v = v.astype(float)
+            v = np.asarray(v, dtype=float)
         self.cache[nombre] = v
         return v
 
@@ -78,7 +94,24 @@ class Simulador:
         self.W = {r: lotes.W(r) for r in RADIOS}
         self.pob = {"pob200": lotes.col("pob200") / 1000, "pob500": lotes.col("pob500") / 1000}
         self.via = lotes.col("via")
+        self.pob_larga = {}
+        # Radios largos: solo se mantienen los que usa alguna regla.
+        nombres = set()
+        for m in modelos.values():
+            for r in (m.localizacion, m.permanencia):
+                if r is not None:
+                    nombres |= r.usa()
+        pob_larga = nombres & {"pob1000", "pob2000"}
+        usados = {p[1] for p in map(partir, nombres - pob_larga) if p}
+        self.largos = tuple(r for r in RADIOS_LARGOS if r in usados)
+        self.celda = lotes.malla()["celda"] if self.largos or pob_larga else None
         self.t = 0
+
+    def conteos(self, r: float) -> np.ndarray:
+        """Comercios por giro a <= r de cada lote (lotes × K)."""
+        if r in self.C:
+            return self.C[r]
+        return self.Cm[r][self.celda]
 
     # ------------------------------------------------------------ estado
     def iniciar(self, lote: np.ndarray | None = None, giro: np.ndarray | None = None):
@@ -103,6 +136,11 @@ class Simulador:
         self.O = np.zeros((self.L.n, self.K), dtype=np.float32)
         np.add.at(self.O, (self.lote, self.giro), 1)
         self.C = {r: np.asarray(W @ self.O, dtype=np.float32) for r, W in self.W.items()}
+        if self.largos:
+            nc = len(self.L.malla()["pob"])
+            self.Om = np.zeros((nc, self.K), dtype=np.float32)
+            np.add.at(self.Om, (self.celda[self.lote], self.giro), 1)
+            self.Cm = {r: np.asarray(self.L.Wm(r) @ self.Om, dtype=np.float32) for r in self.largos}
         self.t = 0
 
     def _cambio(self, lotes: np.ndarray, k: int, signo: float):
@@ -110,6 +148,11 @@ class Simulador:
         self.O[:, k] += v
         for r, W in self.W.items():
             self.C[r][:, k] += W @ v
+        if self.largos:
+            vc = np.bincount(self.celda[lotes], minlength=len(self.Om)).astype(np.float32) * signo
+            self.Om[:, k] += vc
+            for r in self.largos:
+                self.Cm[r][:, k] += self.L.Wm(r) @ vc
 
     def _redondeo(self, x: float) -> int:
         return int(np.floor(x) + (self.rng.random() < x - np.floor(x)))

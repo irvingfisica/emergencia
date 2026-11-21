@@ -12,9 +12,13 @@ ninguna regla puede usar información global de la ciudad.
 Percepción (por lote y para el giro que decide):
 
   pob200, pob500       población a <= 200 / 500 m sobre la red (miles de habitantes)
-  mismo100, mismo200   comercios del mismo giro a <= 100 / 200 m
-  total100, total200   comercios de cualquier giro a <= 100 / 200 m
-  <giro>100, <giro>200 comercios de otro giro concreto (p. ej. ropa200)
+  pob1000, pob2000     población a <= 1 / 2 km (malla gruesa, miles de habitantes)
+  mismoR               comercios del mismo giro a <= R m
+  totalR               comercios de cualquier giro a <= R m
+  otrosR               comercios de otros giros a <= R m (totalR − mismoR)
+  <giro>R              comercios de un giro concreto (p. ej. ropa200)
+                       con R en RADIOS: 100 y 200 (red, lote a lote) o 1000 y 2000
+                       (malla gruesa de celdas, ver lotes.py)
   via                  jerarquía de la calle (0 local … 3 primaria, 4 peatonal)
   avenida, peatonal    indicadores de tipo de calle
   edad                 pasos desde que llegó (solo en permanencia)
@@ -28,8 +32,10 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-BASICOS = {"pob200", "pob500", "mismo100", "mismo200", "total100", "total200",
-           "via", "avenida", "peatonal", "edad"}
+RADIOS = (100, 200, 1000, 2000)
+CONTEOS = ("mismo", "total", "otros")
+BASICOS = ({"pob200", "pob500", "pob1000", "pob2000", "via", "avenida", "peatonal", "edad"}
+           | {f"{c}{r}" for c in CONTEOS for r in RADIOS})
 
 OPERADORES = {
     "exp": lambda x: np.exp(np.clip(x, -50, 50)),
@@ -66,7 +72,7 @@ class Regla:
 
     @property
     def permitidos(self) -> set[str]:
-        return BASICOS | {f"{g}{r}" for g in self.giros for r in (100, 200)} | set(self.params)
+        return BASICOS | {f"{g}{r}" for g in self.giros for r in RADIOS} | set(self.params)
 
     def _revisar(self, n):
         self.nodos += 1

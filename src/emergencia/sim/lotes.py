@@ -12,6 +12,11 @@ instalarse hasta CAPACIDAD comercios. Para cada lote se guarda:
 
 y la matriz dispersa de distancias en red entre lotes a <= RMAX.
 Salida: datos/ciudades/<ciudad>/lotes_<paso>.npz y lotes_<paso>.parquet.
+
+Para la percepción de largo alcance (RADIOS_LARGOS) hay además una malla gruesa
+(`malla`): celdas de CELDA m, cada una representada por su lote más poblado, con
+distancias en red entre celdas. Un comercio percibe lo que hay en las celdas a <= r
+de la suya. Se guarda en malla_<CELDA>.npz y se construye la primera vez que se pide.
 """
 from __future__ import annotations
 
@@ -30,6 +35,8 @@ from ..ciudad import RAIZ, ciudades
 RMAX = 200.0
 R_POB = (200.0, 500.0)
 CAPACIDAD = 3
+CELDA = 200.0
+RADIOS_LARGOS = (1000.0, 2000.0)
 VIA = {"residential": 0, "living_street": 0, "unclassified": 0, "road": 0,
        "tertiary": 1, "tertiary_link": 1, "secondary": 2, "secondary_link": 2,
        "primary": 3, "primary_link": 3, "trunk": 3, "trunk_link": 3, "pedestrian": 4}
@@ -38,11 +45,35 @@ VIA = {"residential": 0, "living_street": 0, "unclassified": 0, "road": 0,
 class Lotes:
     """Lotes de una ciudad con sus distancias en red."""
 
-    def __init__(self, tabla: pd.DataFrame, D: sparse.csr_matrix):
+    def __init__(self, tabla: pd.DataFrame, D: sparse.csr_matrix, base: Path | None = None, paso: int = 25):
         self.tabla = tabla.reset_index(drop=True)
         self.D = D
         self.n = len(tabla)
+        self.base, self.paso = base, paso
         self._W = {}
+        self._malla = None
+
+    def malla(self) -> dict:
+        """Malla gruesa: celda de cada lote, población por celda y distancias en red
+        entre celdas a <= max(RADIOS_LARGOS)."""
+        if self._malla is None:
+            cache = self.base / f"malla_{int(CELDA)}.npz"
+            if not cache.exists():
+                construir_malla(self, cache)
+            z = np.load(cache)
+            D = sparse.csr_matrix((z["d"], (z["i"], z["j"])), shape=(len(z["pob"]),) * 2)
+            self._malla = {"celda": z["celda"], "pob": z["pob"], "D": D, "W": {}}
+        return self._malla
+
+    def Wm(self, r: float) -> sparse.csr_matrix:
+        """Vecindad binaria entre celdas a <= r (incluye la propia)."""
+        m = self.malla()
+        if r not in m["W"]:
+            W = m["D"].copy()
+            W.data = (W.data <= r).astype(np.float32)
+            W.eliminate_zeros()
+            m["W"][r] = W.tocsr()
+        return m["W"][r]
 
     def W(self, r: float) -> sparse.csr_matrix:
         """Vecindad binaria a <= r (incluye el propio lote)."""
@@ -74,7 +105,31 @@ class Lotes:
         base = (datos or RAIZ / "datos" / "ciudades") / ciudad
         tabla = pd.read_parquet(base / f"lotes_{paso}.parquet")
         D = sparse.load_npz(base / f"lotes_{paso}.npz").tocsr()
-        return Lotes(tabla, D)
+        return Lotes(tabla, D, base, paso)
+
+
+def construir_malla(L: Lotes, destino: Path) -> None:
+    t0 = time.time()
+    x, y = L.col("x"), L.col("y")
+    cx, cy = np.floor(x / CELDA).astype(np.int64), np.floor(y / CELDA).astype(np.int64)
+    clave = cx * 1_000_003 + cy
+    celdas, celda = np.unique(clave, return_inverse=True)
+    nc = len(celdas)
+    # Representante: el lote con más población a 500 m (evita lotes aislados).
+    orden = np.lexsort((-L.col("pob500"), celda))
+    primero = np.r_[True, celda[orden][1:] != celda[orden][:-1]]
+    rep = orden[primero]
+    pob = np.bincount(celda, weights=L.col("pob"), minlength=nc)
+    _, G = grafo(gpd.read_parquet(L.base / "tramos.parquet"), L.paso)
+    I, J, V = [], [], []
+    for i in range(0, nc, 256):
+        d = dijkstra(G, directed=False, indices=rep[i:i + 256], limit=max(RADIOS_LARGOS))[:, rep]
+        r, c = np.nonzero(np.isfinite(d))
+        I.append(i + r); J.append(c); V.append(d[r, c].astype(np.float32))
+    np.savez_compressed(destino, celda=celda.astype(np.int32), pob=pob, i=np.concatenate(I).astype(np.int32),
+                        j=np.concatenate(J).astype(np.int32), d=np.concatenate(V))
+    print(f"  malla de {CELDA:.0f} m: {nc:,} celdas, {sum(len(v) for v in V):,} pares, {time.time() - t0:.0f} s",
+          flush=True)
 
 
 def grafo(tramos: gpd.GeoDataFrame, paso: float) -> tuple[pd.DataFrame, sparse.csr_matrix]:

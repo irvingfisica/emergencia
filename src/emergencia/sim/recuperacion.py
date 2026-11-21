@@ -51,6 +51,8 @@ def main() -> None:
     ap.add_argument("--rapido", action="store_true", help="menos pasos e iteraciones, para probar")
     ap.add_argument("--candidatas", nargs="*")
     ap.add_argument("--procesos", type=int)
+    ap.add_argument("--arranques", type=int, default=1, help="CMA-ES en paralelo desde puntos distintos")
+    ap.add_argument("--etiqueta", default="", help="sufijo del archivo de salida")
     a = ap.parse_args()
     escena = Escena(a.ciudad, GIROS_N, pasos=60 if a.rapido else 150)
     it, pob, rep_verdad = (3, 6, 4) if a.rapido else (12, 10, 8)
@@ -73,14 +75,16 @@ def main() -> None:
         for nombre, espec in CANDIDATAS.items():
             if a.candidatas and nombre not in a.candidatas:
                 continue
-            r = calibrar(banco, escena, espec, objetivo, escala, poblacion=pob, iteraciones=it)
+            r = calibrar(banco, escena, espec, objetivo, escala, poblacion=pob, iteraciones=it,
+                         arranques=a.arranques)
             d = {k: round(v, 3) for k, v in r.distancia.items()}
             vals = {g: {k: round(v, 3) for k, v in vs.items()} for g, vs in r.valores.items() if vs}
             print(f"{nombre:26s} complejidad {r.complejidad:3d}  distancia {d['total']:7.2f}  {d}  {vals}  "
                   f"({r.evaluaciones} sim, {r.segundos:.0f} s)", flush=True)
             salida["candidatas"][nombre] = {"espec": espec, "valores": r.valores, "distancia": r.distancia,
-                                            "complejidad": r.complejidad, "historia": r.historia}
-            (destino / f"recuperacion_dsl_{a.ciudad}.json").write_text(json.dumps(salida, indent=1, default=float))
+                                            "complejidad": r.complejidad, "historia": r.historia,
+                                            "arranques": r.arranques}
+            (destino / f"recuperacion_dsl_{a.ciudad}{'_' + a.etiqueta if a.etiqueta else ''}.json").write_text(json.dumps(salida, indent=1, default=float))
     finally:
         banco.cerrar()
 

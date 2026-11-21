@@ -36,10 +36,17 @@ def _por_sector(texto, params):
 CANDIDATAS = {
     "pob_mismo": _por_sector("pob500**a * (1+mismo200)**b", {"a": [0, 3], "b": [0, 3]}),
     "pob_total": _por_sector("pob500**a * (1+total200)**b", {"a": [0, 3], "b": [0, 3]}),
-    "pob_exp": _por_sector("pob500**a * exp(b*mismo200)", {"a": [0, 3], "b": [0, 1]}),
+    "pob_exp": _por_sector("pob500**a * exp(b*mismo200)", {"a": [0, 3], "b": [0.001, 1, "log"]}),
     "mismo": _por_sector("(1+mismo200)**b", {"b": [0, 3]}),
     "pob": _por_sector("pob500**a", {"a": [0, 3]}),
     "nulo": _por_sector("1", {}),
+    # Percepción de largo alcance (malla gruesa, ver lotes.py).
+    "pob_largo": _por_sector("pob2000**a", {"a": [0, 4]}),
+    "competencia": _por_sector("pob500**a / (1+mismo2000)**c", {"a": [0, 3], "c": [0, 3]}),
+    "aglom_comp": _por_sector("pob500**a * (1+mismo200)**b / (1+mismo2000)**c",
+                              {"a": [0, 3], "b": [0, 3], "c": [0, 3]}),
+    "aglom_comp_otros": _por_sector("pob500**a * (1+mismo200)**b / (1+mismo2000)**c * (1+otros1000)**e",
+                                    {"a": [0, 3], "b": [0, 3], "c": [0, 3], "e": [-3, 1]}),
 }
 
 
@@ -66,6 +73,8 @@ def main() -> None:
     ap.add_argument("--rapido", action="store_true")
     ap.add_argument("--candidatas", nargs="*")
     ap.add_argument("--procesos", type=int)
+    ap.add_argument("--arranques", type=int, default=1, help="CMA-ES en paralelo desde puntos distintos")
+    ap.add_argument("--etiqueta", default="", help="sufijo del archivo de salida")
     a = ap.parse_args()
     escena = Escena(a.ciudad, N, pasos=60 if a.rapido else 150)
     it, pob, rep = (3, 6, 4) if a.rapido else (12, 10, 8)
@@ -90,14 +99,16 @@ def main() -> None:
         for nombre, espec in CANDIDATAS.items():
             if a.candidatas and nombre not in a.candidatas:
                 continue
-            r = calibrar(banco, escena, espec, objetivo, escala, poblacion=pob, iteraciones=it)
+            r = calibrar(banco, escena, espec, objetivo, escala, poblacion=pob, iteraciones=it,
+                         arranques=a.arranques)
             d = {k: round(v, 3) for k, v in r.distancia.items()}
             vals = {g: {k: round(v, 3) for k, v in vs.items()} for g, vs in r.valores.items() if vs}
             print(f"{nombre:12s} complejidad {r.complejidad:3d}  distancia {d['total']:7.2f}  {d}  {vals}  "
                   f"({r.evaluaciones} sim, {r.segundos:.0f} s)", flush=True)
             salida["candidatas"][nombre] = {"espec": espec, "valores": r.valores, "distancia": r.distancia,
-                                            "complejidad": r.complejidad, "historia": r.historia}
-            (destino / f"recuperacion_hw_{a.ciudad}.json").write_text(json.dumps(salida, indent=1, default=float))
+                                            "complejidad": r.complejidad, "historia": r.historia,
+                                            "arranques": r.arranques}
+            (destino / f"recuperacion_hw_{a.ciudad}{'_' + a.etiqueta if a.etiqueta else ''}.json").write_text(json.dumps(salida, indent=1, default=float))
     finally:
         banco.cerrar()
 
