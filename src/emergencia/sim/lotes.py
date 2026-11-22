@@ -21,6 +21,7 @@ de la suya. Se guarda en malla_<CELDA>.npz y se construye la primera vez que se 
 from __future__ import annotations
 
 import argparse
+import os
 import time
 from pathlib import Path
 
@@ -126,8 +127,11 @@ def construir_malla(L: Lotes, destino: Path) -> None:
         d = dijkstra(G, directed=False, indices=rep[i:i + 256], limit=max(RADIOS_LARGOS))[:, rep]
         r, c = np.nonzero(np.isfinite(d))
         I.append(i + r); J.append(c); V.append(d[r, c].astype(np.float32))
-    np.savez_compressed(destino, celda=celda.astype(np.int32), pob=pob, i=np.concatenate(I).astype(np.int32),
+    # Escritura atómica: varios procesos pueden pedir la malla a la vez.
+    tmp = destino.with_name(f"{destino.stem}.{os.getpid()}.tmp.npz")
+    np.savez_compressed(tmp, celda=celda.astype(np.int32), pob=pob, i=np.concatenate(I).astype(np.int32),
                         j=np.concatenate(J).astype(np.int32), d=np.concatenate(V))
+    os.replace(tmp, destino)
     print(f"  malla de {CELDA:.0f} m: {nc:,} celdas, {sum(len(v) for v in V):,} pares, {time.time() - t0:.0f} s",
           flush=True)
 

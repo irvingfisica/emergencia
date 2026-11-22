@@ -81,6 +81,7 @@ def main() -> None:
     destino = RAIZ / "salida" / "fase1"
     destino.mkdir(parents=True, exist_ok=True)
     h = preparar(a.ciudad)
+    _lotes(a.ciudad).malla()  # se construye aquí, antes de abrir los procesos
     rng = np.random.default_rng(0)
     W = {}
     for g, eta in SECTORES.items():
