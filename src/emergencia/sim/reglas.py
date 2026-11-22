@@ -17,7 +17,7 @@ Percepción (por lote y para el giro que decide):
   totalR               comercios de cualquier giro a <= R m
   otrosR               comercios de otros giros a <= R m (totalR − mismoR)
   <giro>R              comercios de un giro concreto (p. ej. ropa200)
-                       con R en RADIOS: 100 y 200 (red, lote a lote) o 1000 y 2000
+                       con R en RADIOS: 100 y 200 (red, lote a lote) o 1000 a 4000
                        (malla gruesa de celdas, ver lotes.py)
   via                  jerarquía de la calle (0 local … 3 primaria, 4 peatonal)
   avenida, peatonal    indicadores de tipo de calle
@@ -32,7 +32,7 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-RADIOS = (100, 200, 1000, 2000)
+RADIOS = (100, 200, 1000, 2000, 3000, 4000)
 CONTEOS = ("mismo", "total", "otros")
 BASICOS = ({"pob200", "pob500", "pob1000", "pob2000", "via", "avenida", "peatonal", "edad"}
            | {f"{c}{r}" for c in CONTEOS for r in RADIOS})

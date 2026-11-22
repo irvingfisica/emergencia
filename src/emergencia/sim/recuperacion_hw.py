@@ -67,6 +67,28 @@ def _tarea_hw(args):
     return firma_hw(*args)
 
 
+def verdad_hw(ciudad: str):
+    """Equilibrios de los tres sectores (y la malla gruesa, antes de abrir procesos)."""
+    h = preparar(ciudad)
+    _lotes(ciudad).malla()
+    rng = np.random.default_rng(0)
+    W = {}
+    for g, eta in SECTORES.items():
+        W[g] = equilibrar(h["P"], h["d"], eta, rng)
+        print(f"{g}: η = {eta}, centros vivos {vivos(W[g])}", flush=True)
+    return h, W
+
+
+def objetivo_hw(banco: Banco, ciudad: str, h: dict, W: dict, rep: int = 8):
+    """Firma objetivo (media de `rep` réplicas), escala y piso de ruido."""
+    fs = banco.pool.map(_tarea_hw, [(ciudad, h["oferta"], W, 10_000 + i) for i in range(rep)])
+    objetivo, escala = promedio(fs), dispersion(fs)
+    ref = banco.pool.map(_tarea_hw, [(ciudad, h["oferta"], W, 20_000 + i) for i in range(8)])
+    piso = [distancia(promedio(ref[i:i + 2]), objetivo, escala)["total"] for i in range(0, 8, 2)]
+    print(f"piso de ruido: {np.mean(piso):.2f} ± {np.std(piso):.2f}", flush=True)
+    return objetivo, escala, piso
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--ciudad", default="aguascalientes")
@@ -80,20 +102,10 @@ def main() -> None:
     it, pob, rep = (3, 6, 4) if a.rapido else (12, 10, 8)
     destino = RAIZ / "salida" / "fase1"
     destino.mkdir(parents=True, exist_ok=True)
-    h = preparar(a.ciudad)
-    _lotes(a.ciudad).malla()  # se construye aquí, antes de abrir los procesos
-    rng = np.random.default_rng(0)
-    W = {}
-    for g, eta in SECTORES.items():
-        W[g] = equilibrar(h["P"], h["d"], eta, rng)
-        print(f"{g}: η = {eta}, centros vivos {vivos(W[g])}", flush=True)
+    h, W = verdad_hw(a.ciudad)
     banco = Banco(a.procesos)
     try:
-        fs = banco.pool.map(_tarea_hw, [(a.ciudad, h["oferta"], W, 10_000 + i) for i in range(rep)])
-        objetivo, escala = promedio(fs), dispersion(fs)
-        ref = banco.pool.map(_tarea_hw, [(a.ciudad, h["oferta"], W, 20_000 + i) for i in range(8)])
-        piso = [distancia(promedio(ref[i:i + 2]), objetivo, escala)["total"] for i in range(0, 8, 2)]
-        print(f"piso de ruido: {np.mean(piso):.2f} ± {np.std(piso):.2f}", flush=True)
+        objetivo, escala, piso = objetivo_hw(banco, a.ciudad, h, W, rep)
         salida = {"sectores": SECTORES, "n": N, "pasos": escena.pasos, "piso": piso,
                   "centros_vivos": {g: vivos(w) for g, w in W.items()},
                   "objetivo": {k: v.tolist() for k, v in objetivo.items()}, "candidatas": {}}

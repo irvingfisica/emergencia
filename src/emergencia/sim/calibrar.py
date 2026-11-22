@@ -11,7 +11,10 @@ cada parámetro:
 con tercer elemento "log" (p. ej. [0.001, 1, "log"]) se recorre en escala logarítmica.
 
 La calibración usa CMA-ES en el cubo [0, 1] y evalúa cada punto con varias
-réplicas en paralelo. Con `arranques` > 1 corren varias CMA-ES a la vez desde
+réplicas en paralelo. Con `x0` (p. ej. los parámetros de una estructura más chica,
+vía `a_cubo`) el primer arranque sale de ahí y ese punto compite en la evaluación
+final, así que una estructura que contiene a otra no ajusta peor que ella salvo por
+ruido. Con `arranques` > 1 corren varias CMA-ES a la vez desde
 puntos iniciales distintos (contra los óptimos locales) y al final se reevalúan
 el mejor punto y la media de cada una.
 """
@@ -70,6 +73,18 @@ def complejidad(espec: dict, giros: list[str]) -> int:
 def lista_params(espec: dict) -> list[tuple[str, str, float, float, bool]]:
     return [(g, k, float(v[0]), float(v[1]), len(v) > 2 and v[2] == "log")
             for g, e in espec.items() for k, v in e.get("params", {}).items()]
+
+
+def a_cubo(espec: dict, valores: dict[str, dict[str, float]], neutros: dict[str, float] | None = None) -> np.ndarray:
+    """Inversa de a_valores: los parámetros que faltan en `valores` toman su valor
+    neutro (por nombre en `neutros`, 0 si no se da), recortado al rango."""
+    neutros = neutros or {}
+    x = []
+    for g, k, lo, hi, log in lista_params(espec):
+        v = valores.get(g, {}).get(k, neutros.get(k, 0.0))
+        v = min(max(v, lo), hi)
+        x.append(np.log(v / lo) / np.log(hi / lo) if log else (v - lo) / (hi - lo))
+    return np.array(x)
 
 
 def a_valores(espec: dict, x01: np.ndarray) -> dict[str, dict[str, float]]:
@@ -175,7 +190,9 @@ def calibrar(banco: Banco, escena: Escena, espec: dict, objetivo: dict, escala: 
     d = len(P)
     rng = np.random.default_rng(semilla)
     x0s = [x0 if x0 is not None else np.full(d, 0.5)] + [rng.uniform(0.1, 0.9, d) for _ in range(arranques - 1)]
-    ess = [cma.CMAEvolutionStrategy(x, 0.25, {"bounds": [0, 1], "popsize": poblacion, "maxiter": iteraciones,
+    # Desde un punto heredado se explora más cerca (paso inicial menor).
+    sigmas = [0.12 if x0 is not None else 0.25] + [0.25] * (arranques - 1)
+    ess = [cma.CMAEvolutionStrategy(x, sigmas[j], {"bounds": [0, 1], "popsize": poblacion, "maxiter": iteraciones,
                                               "seed": semilla + 1 + j, "verbose": -9})
            for j, x in enumerate(x0s)]
     mejor = [None] * len(ess)
@@ -199,6 +216,8 @@ def calibrar(banco: Banco, escena: Escena, espec: dict, objetivo: dict, escala: 
     # La mejor de una sola evaluación está sesgada hacia abajo por el ruido:
     # se reevalúan el mejor punto y la media de cada arranque con réplicas nuevas.
     cand = [c for j, es in enumerate(ess) for c in (mejor[j][0], np.clip(es.mean, 0, 1))]
+    if x0 is not None:
+        cand.append(np.asarray(x0))  # el punto heredado también compite al final
     ds = evaluar_todos(cand, semilla + 999_999)
     n_eval += len(cand) * replicas
     i = int(np.argmin([x["total"] for x in ds]))

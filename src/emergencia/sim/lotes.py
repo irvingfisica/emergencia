@@ -16,7 +16,7 @@ Salida: datos/ciudades/<ciudad>/lotes_<paso>.npz y lotes_<paso>.parquet.
 Para la percepción de largo alcance (RADIOS_LARGOS) hay además una malla gruesa
 (`malla`): celdas de CELDA m, cada una representada por su lote más poblado, con
 distancias en red entre celdas. Un comercio percibe lo que hay en las celdas a <= r
-de la suya. Se guarda en malla_<CELDA>.npz y se construye la primera vez que se pide.
+de la suya. Se guarda en malla_<CELDA>_<radio máximo>.npz y se construye la primera vez que se pide.
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ RMAX = 200.0
 R_POB = (200.0, 500.0)
 CAPACIDAD = 3
 CELDA = 200.0
-RADIOS_LARGOS = (1000.0, 2000.0)
+RADIOS_LARGOS = (1000.0, 2000.0, 3000.0, 4000.0)
 VIA = {"residential": 0, "living_street": 0, "unclassified": 0, "road": 0,
        "tertiary": 1, "tertiary_link": 1, "secondary": 2, "secondary_link": 2,
        "primary": 3, "primary_link": 3, "trunk": 3, "trunk_link": 3, "pedestrian": 4}
@@ -58,7 +58,7 @@ class Lotes:
         """Malla gruesa: celda de cada lote, población por celda y distancias en red
         entre celdas a <= max(RADIOS_LARGOS)."""
         if self._malla is None:
-            cache = self.base / f"malla_{int(CELDA)}.npz"
+            cache = self.base / f"malla_{int(CELDA)}_{int(max(RADIOS_LARGOS))}.npz"
             if not cache.exists():
                 construir_malla(self, cache)
             z = np.load(cache)
