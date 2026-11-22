@@ -236,7 +236,7 @@ el buscador puede codificar el patrón directamente en vez de hacerlo emerger.
 | Fase | Qué | Resultado |
 |---|---|---|
 | **0. Datos y patrones observados** | Serie del DENUE, red y población para 2–3 ciudades. Calcular P1–P5 y verificar que los patrones son claros y estables entre fotos. | Mapas y patrones observados. Decisión de ciudades y giros. **Primeros resultados (P1–P3): [docs/fase0.md](docs/fase0.md).** |
-| **1. Simulador y prueba de recuperación** | Simulador sobre la red y DSL. Recuperar las reglas de lugares centrales a partir de sus patrones. | El método recupera la verdad conocida (o se sabe por qué no). **Resultados: [docs/fase1.md](docs/fase1.md)** — recupera una regla del DSL; ante lugares centrales ordena η pero ninguna regla local de radio corto reproduce los patrones. |
+| **1. Simulador y prueba de recuperación** | Simulador sobre la red y DSL. Recuperar las reglas de lugares centrales a partir de sus patrones. | El método recupera la verdad conocida (o se sabe por qué no). **Resultados: [docs/fase1.md](docs/fase1.md)** — recupera una regla del DSL; ante lugares centrales, la regla «atracción cercana × competencia lejana» ordena η y reduce el error a menos de la mitad, aunque todavía no alcanza el piso de ruido. |
 | **2. Búsqueda en una ciudad** | Ciclo completo en una ciudad, modo génesis. | Primer frente de Pareto de reglas reales. |
 | **3. Validación** | Modo evolución 2015 → 2020 → 2025, choque de 2020, patrones reservados. | Reglas que sobreviven a la validación. |
 | **4. Universalidad** | Mismas reglas en otras ciudades. | Qué es general y qué es local. |

@@ -214,28 +214,125 @@ y mucha menos concentración. Hay dos razones, y las dos son de alcance:
    Las candidatas probadas no ven a los otros giros salvo a través de `total200`,
    que es positivo (atracción), no negativo.
 
+## Segunda ronda: varios arranques y percepción de largo alcance
+
+Se hicieron dos cambios y se repitieron las dos pruebas.
+
+**Calibración con varios arranques.** Corren 3 CMA-ES a la vez desde puntos
+iniciales distintos. Al final se reevalúan el mejor punto y la media de cada una
+con réplicas nuevas, y se guarda el resultado de cada arranque por separado. Los
+rangos pueden recorrerse en escala logarítmica (`[0.001, 1, "log"]`).
+
+**Percepción de largo alcance.** Se agrega una malla gruesa de celdas de 200 m
+(4,264 en Aguascalientes). Cada celda está representada por su lote más poblado y
+se guardan las distancias en red entre celdas de hasta 2 km. Las reglas pueden usar:
+
+- `pob1000`, `pob2000`: población a ≤ 1 y ≤ 2 km;
+- `mismo1000`, `mismo2000`, `total…`: conteos de comercios a ≤ 1 y ≤ 2 km;
+- `otrosR`, para cualquier radio: comercios de otros giros.
+
+Los conteos de la malla se actualizan paso a paso igual que los de corto alcance.
+Siguen siendo información local: lo que hay alrededor del lote, no estadísticas de
+la ciudad.
+
+Resultados: `salida/fase1/recuperacion_dsl_aguascalientes_v2.json` y
+`salida/fase1/recuperacion_hw_aguascalientes_v2.json`.
+
+### 1a con varios arranques
+
+Piso de ruido 0.32.
+
+| Estructura | Distancia | Arranques | Parámetros del mejor arranque |
+|---|---:|---|---|
+| **verdad** | **0.72** | 0.72 / 1.07 / 2.57 | a = 1.23, b = 1.57, c = 1.54, d = 0.58 |
+| abarrotes con atracción | 1.11 | 1.11 / 5.54 / 2.34 | a = 1.80, e = −0.77 |
+| ropa sin avenida | 1.62 | 2.20 / 1.62 / 4.03 | |
+
+- La verdad mejora (de 0.87 a 0.72) y sigue siendo la estructura más simple que
+  mejor ajusta.
+- c = 1.54 está más cerca del valor verdadero (1) que antes (2.54), pero sigue mal
+  identificado.
+- Entre el mejor y el peor arranque hay un factor de 3 a 5. Con un solo arranque,
+  el resultado depende mucho del punto inicial.
+- **Equifinalidad.** La estructura que contiene a la verdad no la encuentra. Tampoco
+  apaga el término sobrante (e = 0): lo compensa con más peso a la población
+  (a = 1.8) y repulsión entre abarrotes (e = −0.77). En la primera ronda había
+  caído en la compensación opuesta (a = 0.11, e = 0.79). Población y vecinos del
+  mismo giro se sustituyen en parte, y un término de más abre valles falsos. La
+  búsqueda de estructuras debe penalizar la complejidad; no basta esperar que un
+  término sobrante se apague solo.
+
+### 1b con varios arranques y largo alcance
+
+Piso de ruido 0.22.
+
+| Estructura | Compl. | Distancia | Jensen | Centros | Corred. | Demanda | Arranques |
+|---|---:|---:|---:|---:|---:|---:|---|
+| `pob500**a * (1+mismo200)**b / (1+mismo2000)**c` | 54 | **11.5** | 10.6 | 10.7 | 20.6 | 4.1 | 13.6 / 11.5 / 23.9 |
+| la anterior `* (1+otros1000)**e` | 75 | 18.8 | 27.4 | 20.2 | 19.5 | 8.2 | 34.4 / 97.3 / 18.8 |
+| `pob500**a / (1+mismo2000)**c` | 33 | 28.6 | 51.1 | 6.9 | 14.4 | 41.8 | 34.9 / 28.6 / 46.3 |
+| `pob500**a * (1+mismo200)**b` | 33 | 29.1 | 59.9 | 18.0 | 14.7 | 23.6 | 29.1 / 55.9 / 53.2 |
+| `pob500**a * exp(b*mismo200)` | 30 | 35.4 | 86.8 | 25.1 | 10.1 | 19.6 | 35.4 / 49.6 / 36.0 |
+| `pob500**a` | 12 | 35.5 | 85.2 | 23.5 | 9.7 | 23.6 | 35.5 / 37.6 / 39.5 |
+| `pob2000**a` | 12 | 48.7 | 108.8 | 17.5 | 27.6 | 40.9 | 51.4 / 50.5 / 48.7 |
+
+Parámetros de la mejor estructura (η = 1 / 1.5 / 2.5):
+
+| Parámetro | Qué mide | Valores |
+|---|---|---|
+| a | población | 0.89 / 1.64 / 0.67 |
+| b | atracción entre iguales a 200 m | 2.86 / 0.80 / 0.48 |
+| c | competencia con iguales a 2 km | 3.00 / 2.97 / 1.05 |
+
+Lo que se aprende:
+
+- **Atracción cercana más competencia lejana.** Ninguno de los dos términos solo
+  mejora mucho a la regla de población. Juntos, la distancia cae a 11.5, menos de
+  la mitad que cualquier regla de corto alcance. Las mayores mejoras están en
+  co-localización (Jensen: de 60 a 10.6) y demanda (de 24 a 4.1). Es la estructura
+  clásica de la formación de patrones: activación de corto alcance e inhibición de
+  largo alcance. Es también la lectura local del modelo de lugares centrales: un
+  centro crece si atrae (W en el numerador) y si no tiene competidores cerca (W en
+  el denominador del reparto de demanda).
+- **El diagnóstico de la primera ronda era correcto.** El límite era de alcance de
+  la percepción, no de forma de la regla.
+- **Los parámetros siguen a η.** b baja de forma monótona (2.86, 0.80, 0.48) y c
+  también (3.0, 2.97, 1.05). Con η chico la competencia es de largo alcance y
+  fuerte, como en la verdad.
+- **Todavía no se alcanza el piso.** 11.5 está unas 50 veces por encima.
+  - c llega al tope del rango en η = 1 y η = 1.5: la competencia real va más lejos
+    de 2 km (con η = 1 los centros quedan a unos 1.8 km entre sí).
+  - El grupo que peor ajusta ahora es corredores (20.6): la regla no distingue
+    tipos de vía, y en la verdad los centros quedan donde la red es más accesible.
+- **Más parámetros, peor calibración.** Agregar la interacción con otros giros
+  (12 parámetros) ajustó peor (18.8) que la estructura que contiene (11.5). Los
+  arranques se dispersan entre 18.8 y 97.3. Con 12 dimensiones, 3 arranques × 12
+  iteraciones no alcanzan. La búsqueda de la fase 2 tendrá que calibrar por etapas
+  (heredar los parámetros de la estructura madre como punto inicial) o dar más
+  presupuesto a las estructuras grandes.
+- `pob2000` sola ajusta peor que `pob500`. Lo que ordena a los comercios no es la
+  demanda a 2 km, sino la competencia a esa escala.
+
 ## Qué sigue
 
-1. **Calibración con varios arranques.** Reiniciar CMA-ES desde puntos distintos
-   (o con IPOP), y escalar en logaritmo los parámetros que entran en exponentes.
-   Volver a correr las estructuras de 1a que contienen a la verdad, para ver si
-   alcanzan el piso.
-2. **Percepción de mayor alcance.** Agregar al DSL variables locales de radio
-   largo (por ejemplo, comercios a ≤ 1 km sobre una malla gruesa) y términos con
-   signo libre para otros giros. Con esto, repetir 1b:
-   - si la distancia baja hacia el piso, el problema era de percepción;
-   - si no baja, los patrones de lugares centrales no tienen una explicación
-     local simple, y eso es un resultado en sí.
-3. Después, la **fase 2**: búsqueda de estructuras sobre los datos reales de una
-   ciudad.
+1. **Heredar parámetros.** Al agregar un término, arrancar desde los parámetros
+   calibrados de la estructura sin él (con el término nuevo en su valor neutro).
+   Así una estructura más grande nunca ajusta peor que la que contiene.
+2. **Ampliar el rango de la competencia** (c hasta 6, radios de 3–4 km) y agregar
+   la vía a la regla ganadora, para ver cuánto se acerca al piso.
+3. **Fase 2:** búsqueda de estructuras sobre los datos reales de una ciudad,
+   empezando por la familia que ganó aquí: población × atracción cercana ×
+   competencia lejana.
 
 ## Cómo reproducir
 
 ```
 uv run python -m emergencia.sim.lotes --ciudad aguascalientes
-uv run python -m emergencia.sim.recuperacion          # prueba 1a, ~2.5 h con 6 núcleos
-uv run python -m emergencia.sim.recuperacion_hw       # prueba 1b, ~2 h con 12 núcleos
+uv run python -m emergencia.sim.recuperacion --arranques 3 --etiqueta v2     # 1a, ~3.5 h con 6 núcleos
+uv run python -m emergencia.sim.recuperacion_hw --arranques 3 --etiqueta v2  # 1b, ~1 h por estructura con 6 núcleos
 ```
 
-Las dos pruebas aceptan `--rapido` para una corrida corta de verificación y
-`--candidatas` para correr solo algunas estructuras.
+La malla gruesa se construye sola la primera vez que una regla la usa. Las dos
+pruebas aceptan `--rapido` para una corrida corta de verificación y `--candidatas`
+para correr solo algunas estructuras. Sin `--arranques` ni `--etiqueta` se
+reproduce la primera ronda.
