@@ -1,5 +1,11 @@
 # Fase 1: simulador y prueba de recuperación
 
+> **Nota de cierre.** El resultado de la prueba 1b («atracción cercana × competencia
+> lejana») no es un descubrimiento del método. Las estructuras candidatas las
+> propuso alguien que sabía que la verdad era un modelo de lugares centrales y
+> conoce esa teoría. La simulación solo confirmó lo que el proponente ya traía.
+> Ver [cierre.md](cierre.md).
+
 Antes de buscar reglas en datos reales hay que saber si el método encuentra una
 regla conocida a partir de sus patrones. Esta fase construye el simulador y el
 lenguaje de reglas (DSL) y los pone a prueba con dos verdades sintéticas sobre la
@@ -315,14 +321,9 @@ Lo que se aprende:
 
 ## Qué sigue
 
-1. **Heredar parámetros.** Al agregar un término, arrancar desde los parámetros
-   calibrados de la estructura sin él (con el término nuevo en su valor neutro).
-   Así una estructura más grande nunca ajusta peor que la que contiene.
-2. **Ampliar el rango de la competencia** (c hasta 6, radios de 3–4 km) y agregar
-   la vía a la regla ganadora, para ver cuánto se acerca al piso.
-3. **Fase 2:** búsqueda de estructuras sobre los datos reales de una ciudad,
-   empezando por la familia que ganó aquí: población × atracción cercana ×
-   competencia lejana.
+Nada: el proyecto se cerró aquí. Ver [cierre.md](cierre.md). Una tercera
+ronda (parámetros heredados, competencia a 3–4 km, tipo de vía) se lanzó y se
+detuvo sin resultados.
 
 ## Cómo reproducir
 

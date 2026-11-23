@@ -1,5 +1,12 @@
 # Emergencia: reglas mínimas de agentes a partir de patrones colectivos
 
+> **Proyecto cerrado (noviembre de 2026).** Se detuvo al terminar la fase 1. El
+> planteamiento no sostiene lo que prometía: quien propone las reglas trae su
+> contexto, en el simulador se es juez y parte, y ajustar una distribución del
+> DENUE es trabajo de un modelo estadístico, no de reglas de agentes. El
+> razonamiento completo está en [docs/cierre.md](docs/cierre.md). Lo que sigue es
+> el plan original, tal como se escribió.
+
 Buscar, de forma automática, **las reglas de interacción más simples** que, dadas a
 agentes que solo ven su entorno local, reproducen un **comportamiento colectivo
 observado** en un sistema real. El primer caso es la organización espacial del
@@ -237,9 +244,9 @@ el buscador puede codificar el patrón directamente en vez de hacerlo emerger.
 |---|---|---|
 | **0. Datos y patrones observados** | Serie del DENUE, red y población para 2–3 ciudades. Calcular P1–P5 y verificar que los patrones son claros y estables entre fotos. | Mapas y patrones observados. Decisión de ciudades y giros. **Primeros resultados (P1–P3): [docs/fase0.md](docs/fase0.md).** |
 | **1. Simulador y prueba de recuperación** | Simulador sobre la red y DSL. Recuperar las reglas de lugares centrales a partir de sus patrones. | El método recupera la verdad conocida (o se sabe por qué no). **Resultados: [docs/fase1.md](docs/fase1.md)** — recupera una regla del DSL; ante lugares centrales, la regla «atracción cercana × competencia lejana» ordena η y reduce el error a menos de la mitad, aunque todavía no alcanza el piso de ruido. |
-| **2. Búsqueda en una ciudad** | Ciclo completo en una ciudad, modo génesis. | Primer frente de Pareto de reglas reales. |
-| **3. Validación** | Modo evolución 2015 → 2020 → 2025, choque de 2020, patrones reservados. | Reglas que sobreviven a la validación. |
-| **4. Universalidad** | Mismas reglas en otras ciudades. | Qué es general y qué es local. |
+| **2. Búsqueda en una ciudad** | Ciclo completo en una ciudad, modo génesis. | Primer frente de Pareto de reglas reales. **No se hizo** ([docs/cierre.md](docs/cierre.md)). |
+| **3. Validación** | Modo evolución 2015 → 2020 → 2025, choque de 2020, patrones reservados. | Reglas que sobreviven a la validación. **No se hizo** ([docs/cierre.md](docs/cierre.md)). |
+| **4. Universalidad** | Mismas reglas en otras ciudades. | Qué es general y qué es local. **No se hizo** ([docs/cierre.md](docs/cierre.md)). |
 
 ## 7. Riesgos
 
